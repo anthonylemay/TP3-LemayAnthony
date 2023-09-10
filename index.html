@@ -57,12 +57,99 @@
 </header>
 
 <main class="grid md:grid-cols-4 gap-4">
-  <section class="container mx-auto col-span-4">
-    <img src="img/cheap-fares.svg" class="h-8 mr-3" alt="Fly cheap Fares - High Jack tagline">
+
+  <section class="container mx-auto col-span-4 flex justify-center mt-20 mb-10">
+    <img src="img/cheap-fares.svg" class="h-full px-10" alt="Fly cheap Fares - High Jack tagline">
   </section>
+
+
   <section class="container mx-auto col-span-4">
-  <h2>Last Minute Seats</h2>
-  </section>
+    <h2 class="text-4xl mb-6">Last Minute Seats</h2>
+    <span class="inline-flex">Plan your <a href="#" class="text-3xl f--tonic font-extrabold px-2 hover:underline">Round-Trip</a> From <a href="#" class="text-3xl f--tonic font-extrabold px-2 hover:underline">YQB (Québec)</a> to <a href="#" class="text-3xl f--tonic font-extrabold px-2 hover:underline">Anywhere</a> in the next <a href="#" class="text-3xl f--tonic font-extrabold px-2 hover:underline">Week</a> under <a href="#" class="text-3xl f--tonic font-extrabold px-2 hover:underline">799$</a></span>
+
+    <div id="default-carousel" class="p-10 relative sm:w-full mx-auto" data-carousel="slide">
+        <!-- Carousel wrapper -->
+        <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+            <!-- Item 1 -->
+            <div class="hidden duration-700 ease-in-out absolute h-full w-full" data-carousel-item>
+                <div class="absolute z-30 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+                    <h2 class="text-4xl text-white mb-2">Lisbon, Portugal</h2>
+                    <p class="text-white text-3xl">From 459$ Round-Trip.</p>
+                </div>
+                <div class="absolute inset-0 bg-black opacity-40 z-10"></div> <!-- Black overlay -->
+                <img src="img/lisbon.jpg" class="object-cover absolute block h-full w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 z-10" alt="Lisbon">
+            </div>
+        
+            <!-- Item 2 -->
+            <div class="hidden duration-700 ease-in-out absolute h-full w-full" data-carousel-item>
+                <div class="absolute z-30 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+                    <h2 class="text-4xl text-white mb-2">Paris, France</h2>
+                    <p class="text-white text-3xl">From 359$ Round-Trip.</p>
+                </div>
+                <div class="absolute inset-0 bg-black opacity-40 z-10"></div> <!-- Black overlay -->
+                <img src="img/paris.jpg" class="object-cover absolute block h-full w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 z-10" alt="Paris">
+            </div>
+        
+            <!-- Item 3 -->
+            <div class="hidden duration-700 ease-in-out absolute h-full w-full" data-carousel-item>
+                <div class="absolute z-30 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+                    <h2 class="text-4xl text-white mb-2">Tokyo, Japan</h2>
+                    <p class="text-white text-3xl">From 799$ Round-Trip.</p>
+                </div>
+                <div class="absolute inset-0 bg-black opacity-40 z-10"></div> <!-- Black overlay -->
+                <img src="img/tokyo.jpg" class="object-cover absolute block h-full w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 z-10" alt="Tokyo">
+            </div>
+        
+            <!-- Item 4 -->
+            <div class="hidden duration-700 ease-in-out absolute h-full w-full" data-carousel-item>
+                <div class="absolute z-30 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+                    <h2 class="text-4xl text-white mb-2">Marrakesh, Morocco</h2>
+                    <p class="text-white text-3xl">From 699$ Round-Trip.</p>
+                </div>
+                <div class="absolute inset-0 bg-black opacity-40 z-10"></div> <!-- Black overlay -->
+                <img src="img/morocco.jpg" class="object-cover absolute block h-full w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 z-10" alt="Morroco">
+            </div>
+        
+            <!-- Item 5 -->
+            <div class="hidden duration-700 ease-in-out absolute h-full w-full" data-carousel-item>
+                <div class="absolute z-30 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+                    <h2 class="text-4xl text-white mb-2">Vancouver, Canada</h2>
+                    <p class="text-white text-3xl">From 299$ Round-Trip.</p>
+                </div>
+                <img src="img/vancouver.jpg" class="object-cover absolute block h-full w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 z-10" alt="Vancouver">
+            </div>
+        </div>
+        
+
+        <!-- Slider indicators -->
+        <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+        </div>
+
+        <!-- Slider controls -->
+        <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:outline-none">
+                <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                </svg>
+                <span class="sr-only">Previous</span>
+            </span>
+        </button>
+        <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:outline-none">
+                <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                </svg>
+                <span class="sr-only">Next</span>
+            </span>
+        </button>
+    </div>
+</section>
+
 
   <section class="container mx-auto col-span-4">
     <h2>Best surf destinations in September</h2>
