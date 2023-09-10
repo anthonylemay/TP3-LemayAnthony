@@ -1,0 +1,105 @@
+.f--white {
+  color: #F7F4EB;
+}
+
+.bg--white {
+  background-color: #F7F4EB;
+}
+
+.f--blue {
+  color: #2FB9FF;
+}
+
+.bg--blue {
+  background-color: #2FB9FF;
+}
+
+.f--deep {
+  color: #749BC2;
+}
+
+.bg--deep {
+  background-color: #749BC2;
+}
+
+.f--lila {
+  color: #C2C4E2;
+}
+
+.bg--lila {
+  background-color: #C2C4E2;
+}
+
+.f--green {
+  color: #70978E;
+}
+
+.bg--green {
+  background-color: #70978E;
+}
+
+.f--camel {
+  color: #CF9F72;
+}
+
+.bg--camel {
+  background-color: #CF9F72;
+}
+
+.f--black {
+  color: #000000;
+}
+
+.bg--black {
+  background-color: #000000;
+}
+
+.f--charcoal {
+  color: #2c2c2c;
+}
+
+.bg--charcoal {
+  background-color: #2c2c2c;
+}
+
+.f--fuel {
+  color: #0066FF;
+}
+
+.bg--fuel {
+  background-color: #0066FF;
+}
+
+h4, h3, h2, h1 {
+  font-family: "itc-benguiat", sans-serif;
+  font-weight: 900;
+}
+
+p {
+  font-family: "yrsa", sans-serif;
+  font-weight: 900;
+}
+
+.tonic {
+  font-family: "rama-slab-e", sans-serif;
+}
+
+.title__sub {
+  font-family: "hoosier-daddy", sans-serif;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
+}/*# sourceMappingURL=style.css.map */

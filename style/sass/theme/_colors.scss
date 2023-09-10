@@ -1,0 +1,39 @@
+$white: #F7F4EB; 
+$blue: #2FB9FF;
+$deep: #749BC2;
+$lila: #C2C4E2;
+$green: #70978E;
+$camel: #CF9F72;
+$black: #000000;
+$charcoal: #2c2c2c;
+$fuel: #0066FF;
+
+$colors: (
+  'white': $white,
+  'blue': $blue,
+  'deep': $deep,
+  'lila': $lila,
+  'green': $green,
+  'camel': $camel,
+  'black': $black,
+  'charcoal':$charcoal,
+  'fuel': $fuel
+);
+
+@mixin f-color($color) {
+    color: $color;
+}
+
+@mixin bg-color($color) {
+    background-color: $color;
+}
+
+@each $color-name, $color-value in $colors {
+  .f--#{$color-name} {
+    @include f-color($color-value);
+  }
+
+  .bg--#{$color-name} {
+    @include bg-color($color-value);
+  }
+}

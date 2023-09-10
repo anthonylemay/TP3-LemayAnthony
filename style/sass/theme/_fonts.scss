@@ -1,0 +1,38 @@
+$h: "itc-benguiat", sans-serif;
+$sub: "hoosier-daddy", sans-serif;
+$tonic: "rama-slab-e", sans-serif;
+$p: "yrsa", sans-serif;
+
+$font-size: 1.5rem;
+$font-size--max: 2.5rem;
+$font-size--min: 1rem;
+$font-size--increment: 0.25rem;
+
+$regular: 400;
+$bold: 700;
+$ultra: 900;
+
+%h{
+    font-family: $h;
+    font-weight: $ultra;
+}
+
+@for $i from 1 through 4 {
+  $font-size: $font-size--max - ($i - 1) * $font-size--increment;
+  h#{$i} {
+    @extend %h;
+  }
+}
+
+p{
+    font-family: $p;
+    font-weight: $ultra;
+}
+
+.tonic{
+  font-family:$tonic;
+}
+
+.title__sub {
+  font-family: $sub;
+}
