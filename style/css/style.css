@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 .f--white {
   color: #F7F4EB;
 }
@@ -71,26 +74,28 @@
 }
 
 h4, h3, h2, h1 {
-  font-family: "itc-benguiat", sans-serif;
-  font-weight: 900;
+  font-family: "loos-wide", sans-serif;
+  font-weight: 800;
 }
 
-p {
-  font-family: "yrsa", sans-serif;
-  font-weight: 900;
+p, a, span {
+  font-family: "loos-compressed", sans-serif;
+  font-weight: 400;
 }
 
-.tonic {
-  font-family: "rama-slab-e", sans-serif;
+.f--logo {
+  font-family: "Chango", cursive;
 }
 
-.title__sub {
-  font-family: "hoosier-daddy", sans-serif;
+.f--tonic {
+  font-family: "gigalypse", sans-serif;
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+nav ul.f--nav li a {
+  font-family: "loos-wide", sans-serif;
+  font-weight: 800;
+}
+
 .screen-reader-text {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);

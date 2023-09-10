@@ -1,9 +1,6 @@
+@use './config/tailwind'; //garder en haut complètement pour pouvoir overwrite tous les styles de base dans mon compiler.
 @use './theme/colors';
 @use './theme/fonts';
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 
 .screen-reader-text {

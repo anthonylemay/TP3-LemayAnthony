@@ -1,16 +1,17 @@
-$h: "itc-benguiat", sans-serif;
-$sub: "hoosier-daddy", sans-serif;
-$tonic: "rama-slab-e", sans-serif;
-$p: "yrsa", sans-serif;
+$h: "loos-wide", sans-serif;
+$tonic: "gigalypse", sans-serif;
+$p: "loos-compressed", sans-serif;
+$logo: "Chango", cursive;
 
 $font-size: 1.5rem;
 $font-size--max: 2.5rem;
 $font-size--min: 1rem;
 $font-size--increment: 0.25rem;
 
-$regular: 400;
+$light: 400;
+$regular: 500;
 $bold: 700;
-$ultra: 900;
+$ultra: 800;
 
 %h{
     font-family: $h;
@@ -24,15 +25,20 @@ $ultra: 900;
   }
 }
 
-p{
+p, a, span{
     font-family: $p;
-    font-weight: $ultra;
+    font-weight: $light;
 }
 
-.tonic{
-  font-family:$tonic;
+.f--logo{
+  font-family:$logo;
 }
 
-.title__sub {
-  font-family: $sub;
+.f--tonic{
+  font-family: $tonic;
+}
+
+nav ul.f--nav li a{
+  font-family: $h;
+  font-weight: $ultra;
 }
