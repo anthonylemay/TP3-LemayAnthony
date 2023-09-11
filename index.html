@@ -58,16 +58,77 @@
 
 <main class="grid md:grid-cols-4 gap-4">
 
-  <section class="container mx-auto col-span-4 flex justify-center mt-20 mb-10">
+  <section class="container mx-auto col-span-4 flex flex-col justify-center items-center my-20">
     <img src="img/cheap-fares.svg" class="h-full px-10" alt="Fly cheap Fares - High Jack tagline">
+    <h2>Where do you want to go?</h2>
+
+    <div class="flex flex-row w-full mx-auto justify-center items-center">
+    <form class="mt-10 w-full flex flex-col">
+    <div class="container mx-auto flex justify-center items-center p-2 md:p-0">
+        <div class="p-6 grid grid-cols-1 gap-6 bg-white rounded-lg">
+            <div class="flex justify-center  items-center md:justify-start flex-row">
+                <div class="pt-6 px-2 md:pt-0 md:px-0">
+                    <select class="p-2 rounded">
+                        <option>Round-trip</option>
+                        <option>One-Way</option>
+                        <option>Multi-City</option>
+                    </select>
+                </div>
+                <div class="pt-6 px-2 md:pt-0 md:px-0 md:pl-6">
+                    <select class="p-2 rounded">
+                        <option>1 Adult</option>
+                        <option>2 Adults</option>
+                        <option>3 Adults</option>
+                        <option>4 Adults</option>
+                    </select>
+                </div>
+                <div class="pt-6 px-2 md:pt-0 md:px-0 md:pl-6">
+                    <select class=" p-2 rounded">
+                        <option>Basic</option>
+                        <option>Economy</option>
+                        <option>First-Class</option>
+                    </select>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-2 p-2 rounded">
+                    <div class="flex rounded bg-stone-100 items-center p-2 ">
+                        <input type="text" placeholder="Where From?"
+                               class="bg-stone-100 max-w-full focus:outline-none text-gray-700"/>
+                    </div>
+                    <div class="flex rounded bg-stone-100 items-center p-2 ">
+                        <input type="text" placeholder="Where to?"
+                               class="bg-stone-100 max-w-full focus:outline-none text-gray-700"/>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-2 p-2 rounded">
+                    <div class="flex rounded bg-stone-100 items-center p-2 ">
+                        <label for="date-dept" class="px-2 text-gray-900">Departure</label>
+                        <input id="date-dept" type="date" placeholder="Date of Departure"
+                               class="bg-stone-100 max-w-full focus:outline-none text-gray-700"/>
+                    </div>
+                    <div class="flex rounded bg-stone-100 items-center p-2 ">
+                        <label for="date-dept" class="px-2 text-gray-900">Return</label>
+                        <input id="date-dept" type="date" placeholder="Date of Return"
+                               class="bg-stone-100 max-w-full focus:outline-none text-gray-700"/>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flex justify-center"><button type="button" class="flex justify-center md:w-2/4 lg:w-1/4 text-white f--tonic text-xl uppercase bg--fuel hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg px-4 py-2 text-center md:mr-0">FIND FLIGHTS</button>              
+            </div>
+        </div>
+    </div>
+
+    </form>
+    </div>
+
   </section>
 
 
-  <section class="container mx-auto col-span-4">
-    <h2 class="text-4xl mb-6">Last Minute Seats</h2>
-    <span class="inline-flex">Plan your <a href="#" class="text-3xl f--tonic font-extrabold px-2 hover:underline">Round-Trip</a> From <a href="#" class="text-3xl f--tonic font-extrabold px-2 hover:underline">YQB (Québec)</a> to <a href="#" class="text-3xl f--tonic font-extrabold px-2 hover:underline">Anywhere</a> in the next <a href="#" class="text-3xl f--tonic font-extrabold px-2 hover:underline">Week</a> under <a href="#" class="text-3xl f--tonic font-extrabold px-2 hover:underline">799$</a></span>
-
-    <div id="default-carousel" class="p-10 relative sm:w-full mx-auto" data-carousel="slide">
+  <section class="container mx-auto col-span-4 rounded-lg">
+    <h2 class="text-4xl my-6 px-10 text-center">Last-Minute Seats from <a href="#" class="inline-flex items-center text-4xl f--tonic font-extrabold px-2 hover:underline">YQB (Québec)<img src="img/edit.svg" class="h-8 px-2" alt="edit button"></a></h2>
+    <div id="default-carousel" class="px-10 relative w-full mx-auto md:w-4/5" data-carousel="slide">
         <!-- Carousel wrapper -->
         <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
             <!-- Item 1 -->
@@ -118,8 +179,7 @@
                 </div>
                 <img src="img/vancouver.jpg" class="object-cover absolute block h-full w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 z-10" alt="Vancouver">
             </div>
-        </div>
-        
+        </div>     
 
         <!-- Slider indicators -->
         <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
@@ -148,15 +208,68 @@
             </span>
         </button>
     </div>
+    <div class="flex flex-col items-center justify-center">
+    <p class="text-xl mb-6 pt-10 w-3/4 text-center">Unplanned adventures always make for the best memories! Explore all planes about to sell-out to hop in a break without breaking the bank.</p>           
+    <button type="button" class="text-white f--tonic text-xl uppercase bg--fuel hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg px-4 py-2 text-center mb-10 md:mr-0">EXPLORE LAST-MINUTE SEATS</button>              
+</div>    
+<div class="text-center p-10">
+    <div class="text-center p-10 bg--white  rounded-lg">
+        <h2 class="text-4xl mb-6 text-center">Still need options?</h2>
+        <p class="text-xl mb-6 text-center">Tell us more about your travel plans and we'll see what flights are available in your range.</p>
+        <div class="flex flex-col justify-center items-center">
+        <span class="leading-9 flex flex-col lg:flex-row justify-center items-center">Plan your <a href="#" class="inline-flex items-center text-2xl f--tonic font-extrabold px-2 hover:underline">Round-Trip<img src="img/dropdown.svg" class="h-6 px-2" alt="drop-down arrow"></a>
+        From <a href="#" class="inline-flex items-center text-2xl f--tonic font-extrabold px-2 hover:underline">YQB (Québec)<img src="img/edit.svg" class="h-6 px-2" alt="edit button"></a> to
+        <a href="#" class="inline-flex items-center text-2xl f--tonic font-extrabold px-2 hover:underline">Anywhere<img src="img/dropdown.svg" class="h-6 px-2" alt="drop-down arrow"></a></span>
+        <span class="leading-9 flex flex-col lg:flex-row">in the next 
+        <a href="#" class="inline-flex items-center text-2xl f--tonic font-extrabold px-2 hover:underline">Week<img src="img/dropdown.svg" class="h-6 px-2" alt="drop-down arrow"></a>
+         under <a href="#" class="inline-flex items-center text-2xl f--tonic font-extrabold px-2 hover:underline">799$<img src="img/edit.svg" class="h-6 px-2" alt="edit button"></a></span>
+        </div>
+         <button type="button" class="text-white f--tonic text-xl uppercase bg--fuel hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg px-4 py-2 text-center my-10 md:mr-0">TRY YOUR LUCK</button>              
+   </div>
+        
 </section>
 
 
-  <section class="container mx-auto col-span-4">
-    <h2>Best surf destinations in September</h2>
-  </section>
+  <section class="container mx-auto col-span-4 m-10 flex justify-center items-center flex-col">
+    <h2 class="text-4xl my-6 px-10 text-center">Community Highlights</h2>
+    <p class="text-xl mb-6 pt-10 w-3/4 text-center">We love hearing your stories! Tag us using #highjacked on your socials so we can follow through!</p>
+    
+<div class="grid grid-cols-2 md:grid-cols-3 gap-4 m-4">
+    <div>
+        <img class="object-fill h-auto max-w-full rounded-lg" src="img/gallery-1.jpg" alt="">
+    </div>
+    <div>
+        <img class="object-fill h-auto max-w-full rounded-lg" src="img/gallery-2.jpg" alt="">
+    </div>
+    <div>
+        <img class="object-fill h-auto max-w-full rounded-lg" src="img/gallery-3.jpg" alt="">
+    </div>
+    <div>
+        <img class="object-fill h-auto max-w-full rounded-lg" src="img/gallery-4.jpg" alt="">
+    </div>
+    <div>
+        <img class="object-fill h-auto max-w-full rounded-lg" src="img/gallery-5.jpg" alt="">
+    </div>
+    <div>
+        <img class="object-fill h-auto max-w-full rounded-lg" src="img/gallery-6.jpg" alt="">
+    </div>
 
-  <section class="container mx-auto col-span-4">
-    <h2>When would you like to fly?</h2>
+</div>
+
+    <h2 class="text-4xl my-6 px-10 text-center">Don't miss a flight!</h2>
+    <p class="text-xl mb-6 pt-10 w-3/4 text-center">Follow us for special deals and the latest fare sales around the globe!</p>
+    <ul class="inline-flex p-2 m-2">
+        <li>
+            <a href="#" class="m-4"><img class="h-10" src="img/fb.svg" alt="Facebook Icon Link"></a>
+        </li>
+        <li>
+            <a href="#" class="m-4"><img class="h-10" src="img/ig.svg" alt="Instagram Icon Link"></a>
+        </li>
+        <li>
+            <a href="#" class="m-4"><img class="h-10" src="img/mail.svg" alt="Newsletter Icon Link"></a>
+        </li>
+    </ul>
+
   </section>
 
 

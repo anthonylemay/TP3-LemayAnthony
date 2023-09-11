@@ -14,6 +14,11 @@ https://flowbite.com/docs/components/footer/
 
 Emplacement: Page «Fares»
 
+Flight Search
+
+https://tailwindcomponents.com/component/search-form
+
+
 1.Carousel
 
 https://flowbite.com/docs/components/carousel/
