@@ -73,6 +73,14 @@
   background-color: #0066FF;
 }
 
+.f--gold {
+  color: #EFC360;
+}
+
+.bg--gold {
+  background-color: #EFC360;
+}
+
 h4, h3, h2, h1 {
   font-family: "loos-wide", sans-serif;
   font-weight: 800;
@@ -107,4 +115,8 @@ nav ul.f--nav li a {
   position: absolute;
   width: 1px;
   word-wrap: normal !important;
+}
+
+.dashed-line {
+  background-image: repeating-linear-gradient(to right, white 0, white 16rem, transparent 16rem, transparent 20rem);
 }/*# sourceMappingURL=style.css.map */

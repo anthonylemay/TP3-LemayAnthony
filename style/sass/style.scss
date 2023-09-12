@@ -15,4 +15,13 @@
     width: 1px;
     word-wrap: normal !important;
   }
-  
+
+  .dashed-line {
+      background-image: repeating-linear-gradient(
+          to right, 
+          white 0, 
+          white 16rem,  /* Length of the white dash */
+          transparent 16rem, 
+          transparent 20rem /* Gap between dashes */
+      );
+  }

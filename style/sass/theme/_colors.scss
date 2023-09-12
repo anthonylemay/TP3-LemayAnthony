@@ -7,6 +7,7 @@ $camel: #CF9F72;
 $black: #000000;
 $charcoal: #2c2c2c;
 $fuel: #0066FF;
+$gold: #EFC360;
 
 $colors: (
   'white': $white,
@@ -17,7 +18,8 @@ $colors: (
   'camel': $camel,
   'black': $black,
   'charcoal':$charcoal,
-  'fuel': $fuel
+  'fuel': $fuel,
+  'gold': $gold
 );
 
 @mixin f-color($color) {
