@@ -58,9 +58,11 @@ PAge hacks:
 
 How to fly for cheap (tips and tricks)
 
-https://flowbite.com/docs/components/timeline/
+Timeline Stepper:
 
-Accordion:
+https://flowbite.com/docs/components/stepper/
+
+Default Accordion:
 https://flowbite.com/docs/components/accordion/
 
 Formulaire 8 entrées:
