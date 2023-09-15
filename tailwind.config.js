@@ -6,16 +6,11 @@ module.exports = {
     require('flowbite/plugin')
   ],
   content: [
-    //    "/TP3-LEMAYANTHONY/node_modules/flowbite/**/*.js",
-    //"/TP3-LEMAYANTHONY/*.html",
-    //"/TP3-LEMAYANTHONY/js/**/*.js",
-    //"./node_modules/flowbite/**/*.js",
-    //"./*.html",
-    //"./js/**/*.js",
-    "/TP3-LEMAYANTHONY/node_modules/flowbite/**/*.js",
-    "/TP3-LEMAYANTHONY/*.html",
-    "/TP3-LEMAYANTHONY/js/**/*.js",
-  ],
+    "./node_modules/flowbite/**/*.js",
+    "./*.html",
+    "./js/**/*.js",
+],
+
   presets: [],
   darkMode: 'media', // or 'class'
   theme: {
