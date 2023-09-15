@@ -17,6 +17,7 @@ function installPWA(evt) {
         deferredInstallPrompt.prompt();
 
         evt.srcElement.setAttribute('hidden', true);
+        installAlert.setAttribute('hidden', true);
 
 
         // Log user response to prompt.
@@ -27,6 +28,7 @@ function installPWA(evt) {
                 } else {
                     console.log("L'usager a refusé d'installer la PWA.", choice);
                     installButton.removeAttribute('hidden');
+                    installAlert.removeAttribute('hidden');
                 }
                 deferredInstallPrompt = null;
             });
