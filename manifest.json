@@ -1,6 +1,7 @@
 {
-    "name": "High Jack - Flight Hacking made Easy",
+    "name": "High Jack - Voler à rabais et sans tracas",
     "short_name": "High Jack",
+    "description": "High Jack offre une plateforme intuitive afin de découvrir les meilleurs astuces et vols à bas prix pour créer des souvenirs de voyage inoubliables.",
     "icons": [
       {
         "src": "/TP3-LemayAnthony/img/icons/maskable_icon_x48.png",
