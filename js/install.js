@@ -17,7 +17,7 @@ function installPWA(evt) {
         if (deferredInstallPrompt) {
             deferredInstallPrompt.prompt();
 
-            evt.srcElement.setAttribute('hidden', true);
+            evt.target.setAttribute('hidden', true);
             installAlert.setAttribute('hidden', true);
     
     
