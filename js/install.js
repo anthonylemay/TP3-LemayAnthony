@@ -26,6 +26,7 @@ function installPWA(evt) {
                     console.log("L'usager a installé la PWA via le bouton dédié.", choice);
                 } else {
                     console.log("L'usager a refusé d'installer la PWA.", choice);
+                    installButton.removeAttribute('hidden');
                 }
                 deferredInstallPrompt = null;
             });
