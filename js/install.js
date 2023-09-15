@@ -1,21 +1,21 @@
 let deferredInstallPrompt = null;
-const installButton = document.getElementById('butInstall');
+const installAlert = document.getElementById('alert-border-1');
+const installButton = document.getElementById('btnInstall');
 installButton.addEventListener('click', installPWA);
 
-
-// Add event listener for beforeinstallprompt event
 window.addEventListener('beforeinstallprompt', saveBeforeInstallPromptEvent);
+window.addEventListener('appinstalled', logAppInstalled);
 
 function saveBeforeInstallPromptEvent(evt) {
     // CODELAB: Add code to save event & show the install button.
         deferredInstallPrompt = evt;
+        installAlert.removeAttribute('hidden');
         installButton.removeAttribute('hidden');
     }
 
 function installPWA(evt) {
-        // Add code show install prompt & hide the install button.
         deferredInstallPrompt.prompt();
-        // Hide the install button, it can't be called twice.
+
         evt.srcElement.setAttribute('hidden', true);
 
 
@@ -23,24 +23,15 @@ function installPWA(evt) {
         deferredInstallPrompt.userChoice
             .then((choice) => {
                 if (choice.outcome === 'accepted') {
-                    console.log('User accepted the A2HS prompt', choice);
+                    console.log("L'usager a installé la PWA via le bouton dédié.", choice);
                 } else {
-                    console.log('User dismissed the A2HS prompt', choice);
+                    console.log("L'usager a refusé d'installer la PWA.", choice);
                 }
                 deferredInstallPrompt = null;
             });
     }
 
-
-// Add event listener for appinstalled event
-window.addEventListener('appinstalled', logAppInstalled);
-/**
-* Event handler for appinstalled event.
-* Log the installation to analytics or save the event somehow.
-*
-* @param {Event} evt
-*/
 function logAppInstalled(evt) {
-// Add code to log the event
-console.log('High Jack Flight Hacking App was installed.', evt);
+    console.log("L'application High Jack a été installée.", evt);
+    installAlert.setAttribute('hidden', true);
 }
