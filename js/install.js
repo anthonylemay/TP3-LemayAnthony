@@ -42,5 +42,5 @@ window.addEventListener('appinstalled', logAppInstalled);
 */
 function logAppInstalled(evt) {
 // Add code to log the event
-console.log('Weather App was installed.', evt);
+console.log('High Jack Flight Hacking App was installed.', evt);
 }

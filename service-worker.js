@@ -1,8 +1,8 @@
 const CACHE_NAME = 'static-cache-v1';
 
 const FILES_TO_CACHE= [
-    '/TP3-LemayAnthony/offline.html',
-    '/TP3-LemayAnthony/index.html'
+    'offline.html',
+    'index.html'
 ];
 
 self.addEventListener('install',(evt) =>{
