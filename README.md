@@ -1,78 +1,74 @@
 # TP3-LemayAnthony
 Travail Pratique final du cours d'intégration des interfaces web 2
 
+**Mandat**
+
+Site Web fictif usant d'une PWA en tailwind et scss.
+
+**Cours**
+
+Intégration d'interfaces Web 2
+AEC en développement Front-End Hiver 2023
+Cohorte 01050
+
+**Réalisation**
+
+Anthony Lemay ID#6206911
+
 
 **Liste des composantes Tailwind utilisées (flowbite)**
 
-Header :
+Alerte Téléchargement application:
+1. https://flowbite.com/docs/components/alerts/
 
-https://flowbite.com/docs/components/navbar/
 
-Footer:
+Menu:
+2. https://flowbite.com/docs/components/navbar/
 
-https://flowbite.com/docs/components/footer/
+Bas de page:
+3. https://flowbite.com/docs/components/footer/
 
-Emplacement: Page «Fares»
 
-Flight Search
+Page «Fares»:
 
+4. Formulaire de recherche de vols (html seulement, non fonctionnel)
 https://tailwindcomponents.com/component/search-form
 
 
-1.Carousel
-
+5. Carousel
 https://flowbite.com/docs/components/carousel/
 
 
-2.Gallery
-
+6. Gallery
 https://flowbite.com/docs/components/gallery/
-
-
-3. Date Picker
-
-https://flowbite.com/docs/plugins/datepicker/
-
-4. Block Text
-https://flowbite.com/docs/typography/blockquote/
-
-5. Ratings: (optionnel)
-https://flowbite.com/docs/components/rating/
 
 
 Page Records:
 
-1. Cards lowest fares ever : (date, price, itinerary yqb » anywhere)
+7. Cartes destinations
+https://flowbite.com/docs/components/card/
 
-	https://flowbite.com/docs/components/card/
-
-2. Table - Airlines with the most deals in 2023
+8. Table aérolignes
 https://flowbite.com/docs/components/tables/
 
-3. List users  advanced layout
-
+9. Liste utilisateurs
 https://flowbite.com/docs/typography/lists/
 
 
-PAge hacks:
+Page hacks:
 
-How to fly for cheap (tips and tricks)
-
-Timeline Stepper:
-
+10. Timeline Stepper:
 https://flowbite.com/docs/components/stepper/
 
-Default Accordion:
+11. Accordéon:
 https://flowbite.com/docs/components/accordion/
 
-Formulaire 8 entrées:
-
+12. Formulaire 8 entrées (fonctionnel):
 https://flowbite.com/docs/components/forms/
 
 
-**Crédits Photos**
+**Lien Github Pages**
 
-Paris:
+https://anthonylemay.github.io/TP3-LemayAnthony
 
-Juan Ordonez
-https://unsplash.com/fr/photos/7qTr-xy-IuY
+
