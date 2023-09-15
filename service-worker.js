@@ -7,7 +7,6 @@ const FILES_TO_CACHE= [
 
 self.addEventListener('install',(evt) =>{
     console.log('[ServiceWorker] Install');
-    //Precache static resources here.
     self.skipWaiting();
     evt.waitUntil(
         caches.opem(CACHE_NAME).then((cache) => {
@@ -18,13 +17,35 @@ self.addEventListener('install',(evt) =>{
     self.skipWaiting();
 });
 
-    self.addEventListener('activate', (evt) => {
-        console.log('[ServiceWorker] Activate');
-        //Remove previous cached data from disk.
-        self.clients.claim();
+self.addEventListener('activate', (evt) => {
+    console.log('[ServiceWorker] Activate');
+    evt.waitUntil(
+        caches.keys().then((keyList) => {
+            return Promise.all(keyList.map((key) => {
+                if (key !== CACHE_NAME) {
+                    console.log('[ServiceWorker] Removing old cache', key);
+                    return caches.delete(key);
+                }
+            }));
+        })
+    );
+    // Remove previous cached data from disk.
+    self.clients.claim();
 });
+
 
 self.addEventListener('fetch', (evt) => {
     console.log('[ServiceWorker] Fetch', evt.request.url);
-    //add fetch event handler here.
+    if (evt.request.mode !== 'navigate') {
+        return;
+    }
+    evt.respondWith(
+        fetch(evt.request)
+            .catch(() => {
+                return caches.open(CACHE_NAME)
+                    .then((cache) => {
+                        return cache.match('offline.html');
+            });
+        })
+    );
 });
