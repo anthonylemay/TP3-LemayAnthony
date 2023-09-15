@@ -18,8 +18,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Chango&family=Modak&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/pvz5myj.css">
     <link rel="stylesheet" href="style/index.css">
-
     <link rel="icon" href="img/icons/favicon.ico" type="image/x-icon">
+
+    <script>
+        //Enregistrement Service Worker
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load',() => {
+                navigator.serviceWorker.register('service-worker.js')
+                .then((reg) => {
+                    console.log('Service Worker Registered successfully.', reg);
+                });
+            });
+        }
+    </script> 
+
+
 </head>
 
 <body class="bg--blue">
@@ -362,7 +375,7 @@
 </footer>
 
 
-<script src="node_modules/flowbite/dist/flowbite.min.js"></script>
+<script src="node_modules/flowbite/dist/flowbite.min.js"></>
 </body>
 </html>
 
