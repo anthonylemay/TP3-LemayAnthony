@@ -11,6 +11,7 @@ const FILES_TO_CACHE = [
     'index.html',
     'records.html',
     'hacks.html',
+    
     //Imgs
     'img/basketball.svg',
     'img/canada.svg',
