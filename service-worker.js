@@ -1,4 +1,4 @@
-const CACHE_NAME = 'static-cache-v2';
+const CACHE_NAME = 'static-cache-v3';
 
 const FILES_TO_CACHE = [
     //Scripts
@@ -97,7 +97,7 @@ self.addEventListener('fetch', (evt) => {
             .catch(() => {
                 return caches.open(CACHE_NAME)
                     .then((cache) => {
-                        return cache.match('/TP3-LemayAnthony/offline.html');
+                        return cache.match('offline.html');
             });
         })
     );
