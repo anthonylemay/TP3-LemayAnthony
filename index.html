@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <link rel="manifest" href="manifest.json">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-satus-bar-style" content="#F7F4EB">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#F7F4EB">
     <meta name="apple-mobile-web-app-title" content="High Jack">
+    <link rel="apple-touch-icon" href="img/icons/maskable_icon_x192.png">
 
     <meta name="theme-color" content="#2FB9FF">
-    <meta name="drescription" content="High Jack - Flight Hacking made easy">
-    <link rel="apple-touch-icon" href="img/icons/icon-180x180.png">
-    <title>High Jack - Home</title>
+    <meta name="description" content="High Jack - Accueil - Trouvez facilement des vols à rabais">
+
+    <title>High Jack - Accueil</title>
     <script src="js/script.js" defer></script>
     <script src="js/install.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -52,7 +53,7 @@
                     <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
                 </svg>
                 Voyageur fréquent? Installez l'application High Jack dès maintenant: 
-                <button id="btnInstall" hidden aria-label="Install" class="text-white f--tonic text-lg w-3/5 lg:w-72 uppercase bg--fuel hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg px-4 py-2 text-center mx-4">Télécharger High Jack</button>
+                <button id="btnInstall" hidden aria-label="Install" class="text-white f--tonic text-lg w-3/5 lg:w-72 uppercase bg--fuel hover:bg-black focus:ring-4 focus:ring-blue-300 rounded-lg px-4 py-2 text-center mx-4">Télécharger High Jack</button>
             </span>
             
             </div>
@@ -70,14 +71,12 @@
 <header class="bg--blue">
   <nav class="container w-full z-20 top-0 left-0 mx-auto">
     <div class="grid grid-cols-2 md:grid-cols-8 gap-4 items-center mx-auto p-4">
-        <!-- Logo Section -->
         <a href="index.html" class="flex justify-start items-center col-span-1 md:col-span-2">
             <img src="img/logo.svg" class="h-16 mr-3 hover:h-20" alt="High Jack Logo">
             <h1 class="text-black hover:text-white self-center text-4xl leading-7 md:text-3xl md:leading-6 lg:text-4xl lg:leading-7 f--logo uppercase whitespace-nowrap">High<br>Jack</h1>
         </a>
-        <!-- Buttons Section -->
         <div class="flex justify-end col-span-1 md:hidden">
-            <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm f--black rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-sticky" aria-expanded="false">
+            <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm f--black rounded-lg md:hidden hover:bg-gray-100 focus:ring-2 focus:ring-gray-200" aria-controls="navbar-sticky" aria-expanded="false">
               <span class="sr-only">Open main menu</span>
               <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
@@ -88,17 +87,17 @@
         <div class="hidden md:flex md:justify-end md:col-span-6" id="navbar-sticky">
         <ul class="flex flex-col md:flex-row f--nav menu-text uppercase">
             <li class="m-2 mx-3 col-span-2">
-              <a href="index.html" class="inline-flex justify-center items-center py-2 text-center underline  text-white hover:text-gray-900 rounded hover:bg-gray-100  hover:px-2"><img src="img/fares.svg" class="h-8 m-1" alt="Fares Naviguation Icon">Fares</a>
+              <a href="index.html" class="inline-flex justify-center items-center py-2 text-center border-b-4 border-black text-black hover:text-gray-900 hover:bg-gray-100  hover:px-2"><img src="img/fares.svg" class="h-8 mr-1" alt="Fares Naviguation Icon">Accueil</a>
             </li>
             <li class="m-2 mx-3 col-span-2">
-              <a href="records.html" class="inline-flex justify-center items-center py-2 text-center text-gray-900 rounded hover:bg-gray-100 hover:px-2"><img src="img/records.svg" class="h-8 m-1" alt="Records Naviguation Icon">
+              <a href="records.html" class="inline-flex justify-center items-center py-2 text-center text-gray-900 rounded hover:bg-gray-100 hover:px-2"><img src="img/records.svg" class="h-8 mr-1" alt="Records Naviguation Icon">
                 Records</a>
             </li>
             <li class="m-2 mx-3 col-span-2">
-              <a href="hacks.html" class="inline-flex justify-center items-center py-2 text-center text-gray-900 rounded hover:bg-gray-100 hover:px-2"><img src="img/hacks.svg" class="h-8 m-1" alt="Hacks Naviguation Icon">Hacks</a>
+              <a href="hacks.html" class="inline-flex justify-center items-center py-2 text-center text-gray-900 rounded hover:bg-gray-100 hover:px-2"><img src="img/hacks.svg" class="h-8 mr-1" alt="Hacks Naviguation Icon">Astuces</a>
             </li>
             <li class="ml-2 my-2 inline-flex col-span-2">
-            <button type="button" class="text-white f--tonic text-xl uppercase bg--fuel hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg px-4 py-2 text-center mr-3 md:mr-0">Fly High</button>              
+            <button type="button" onclick="window.location.href='index.html'" class="text-white f--tonic text-xl uppercase bg--fuel hover:bg-black focus:ring-4 focus:ring-blue-300 rounded-lg px-4 py-2 text-center mr-3 md:mr-0">VOLS À RABAIS</button>              
             </li>
           </ul>
         </div>
@@ -109,8 +108,8 @@
 <main class="grid md:grid-cols-4 gap-4 mb-20">
 
   <section class="container mx-auto col-span-4 flex flex-col justify-center items-center my-20">
-    <img src="img/cheap-fares.svg" class="h-full px-10" alt="Fly cheap Fares - High Jack tagline">
-    <h2>Where do you want to go?</h2>
+    <img src="img/cheap-fares.svg" class="h-full px-10" alt="Fly cheap Fares - High Jack slogan anglophone">
+    <h2>Où voulez-vous aller?</h2>
 
     <div class="flex flex-row w-full mx-auto justify-center items-center">
     <form class="mt-10 w-full flex flex-col">
@@ -119,53 +118,53 @@
             <div class="flex justify-center  items-center md:justify-start flex-row">
                 <div class="pt-6 px-2 md:pt-0 md:px-0">
                     <select class="p-2 rounded">
-                        <option>Round-trip</option>
-                        <option>One-Way</option>
-                        <option>Multi-City</option>
+                        <option>Aller-Retour</option>
+                        <option>Aller simple</option>
+                        <option>Multi-Villes</option>
                     </select>
                 </div>
                 <div class="pt-6 px-2 md:pt-0 md:px-0 md:pl-6">
                     <select class="p-2 rounded">
-                        <option>1 Adult</option>
-                        <option>2 Adults</option>
-                        <option>3 Adults</option>
-                        <option>4 Adults</option>
+                        <option>1 Adulte</option>
+                        <option>2 Adultes</option>
+                        <option>3 Adultes</option>
+                        <option>4 Adultes</option>
                     </select>
                 </div>
                 <div class="pt-6 px-2 md:pt-0 md:px-0 md:pl-6">
                     <select class=" p-2 rounded">
-                        <option>Basic</option>
-                        <option>Economy</option>
-                        <option>First-Class</option>
+                        <option>Base</option>
+                        <option>Économie</option>
+                        <option>Première Classe</option>
                     </select>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-2 p-2 rounded">
                     <div class="flex rounded bg-stone-100 items-center p-2 ">
-                        <input type="text" placeholder="Where From?"
-                               class="bg-stone-100 max-w-full focus:outline-none text-gray-700"/>
+                        <input type="text" placeholder="Lieu de départ"
+                               class="bg-stone-100 max-w-full text-gray-700"/>
                     </div>
                     <div class="flex rounded bg-stone-100 items-center p-2 ">
-                        <input type="text" placeholder="Where to?"
-                               class="bg-stone-100 max-w-full focus:outline-none text-gray-700"/>
+                        <input type="text" placeholder="Où allez-vous?"
+                               class="bg-stone-100 max-w-full text-gray-700"/>
                     </div>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-2 p-2 rounded">
                     <div class="flex rounded bg-stone-100 items-center p-2 ">
-                        <label for="date-dept" class="px-2 text-gray-900">Departure</label>
-                        <input id="date-dept" type="date" placeholder="Date of Departure"
-                               class="bg-stone-100 max-w-full focus:outline-none text-gray-700"/>
+                        <label for="date-dept" class="px-2 text-gray-900">Départ</label>
+                        <input id="date-dept" type="date" placeholder="Date de départ"
+                               class="bg-stone-100 max-w-full text-gray-700"/>
                     </div>
                     <div class="flex rounded bg-stone-100 items-center p-2 ">
-                        <label for="date-dept" class="px-2 text-gray-900">Return</label>
-                        <input id="date-dept" type="date" placeholder="Date of Return"
-                               class="bg-stone-100 max-w-full focus:outline-none text-gray-700"/>
+                        <label for="date-ret" class="px-2 text-gray-900">Retour</label>
+                        <input id="date-ret" type="date" placeholder="Date de retour"
+                               class="bg-stone-100 max-w-full text-gray-700"/>
                     </div>
                 </div>
             </div>
             
-            <div class="flex justify-center"><button type="button" class="flex justify-center md:w-2/4 lg:w-1/4 text-white f--tonic text-xl uppercase bg--fuel hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg px-4 py-2 text-center md:mr-0">FIND FLIGHTS</button>              
+            <div class="flex justify-center"><button type="button" class="flex justify-center md:w-2/4 lg:w-1/4 text-white f--tonic text-xl uppercase bg--fuel hover:bg-black focus:ring-4 focus:ring-blue-300 rounded-lg px-4 py-2 text-center md:mr-0">FIND FLIGHTS</button>              
             </div>
         </div>
     </div>
@@ -177,7 +176,7 @@
 
 
   <section class="container mx-auto col-span-4 rounded-lg">
-    <h2 class="text-4xl my-6 px-10 text-center">Last-Minute Seats from <a href="#" class="inline-flex items-center text-4xl f--tonic font-extrabold px-2 hover:underline">YQB (Québec)<img src="img/edit.svg" class="h-8 px-2" alt="edit button"></a></h2>
+    <h2 class="text-4xl my-6 px-10 text-center">Sièges dernières minutes de <a href="#" class="inline-flex items-center text-4xl f--tonic font-extrabold px-2 hover:underline">YQB (Québec)<img src="img/edit.svg" class="h-8 px-2" alt="edit button"></a></h2>
     <div id="default-carousel" class="px-10 relative w-full mx-auto md:w-4/5" data-carousel="slide">
         <!-- Carousel wrapper -->
         <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
@@ -185,7 +184,7 @@
             <div class="hidden duration-700 ease-in-out absolute h-full w-full" data-carousel-item>
                 <div class="absolute z-30 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
                     <h2 class="text-4xl text-white mb-2">Lisbon, Portugal</h2>
-                    <p class="text-white text-3xl">From 459$ Round-Trip.</p>
+                    <p class="text-white text-3xl">À partir de 459$ Aller-Retour.</p>
                 </div>
                 <div class="absolute inset-0 bg-black opacity-40 z-10"></div> <!-- Black overlay -->
                 <img src="img/lisbon.jpg" class="object-cover absolute block h-full w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 z-10" alt="Lisbon">
@@ -195,7 +194,7 @@
             <div class="hidden duration-700 ease-in-out absolute h-full w-full" data-carousel-item>
                 <div class="absolute z-30 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
                     <h2 class="text-4xl text-white mb-2">Paris, France</h2>
-                    <p class="text-white text-3xl">From 359$ Round-Trip.</p>
+                    <p class="text-white text-3xl">À partir de 359$ Aller-Retour.</p>
                 </div>
                 <div class="absolute inset-0 bg-black opacity-40 z-10"></div> <!-- Black overlay -->
                 <img src="img/paris.jpg" class="object-cover absolute block h-full w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 z-10" alt="Paris">
@@ -205,7 +204,7 @@
             <div class="hidden duration-700 ease-in-out absolute h-full w-full" data-carousel-item>
                 <div class="absolute z-30 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
                     <h2 class="text-4xl text-white mb-2">Tokyo, Japan</h2>
-                    <p class="text-white text-3xl">From 799$ Round-Trip.</p>
+                    <p class="text-white text-3xl">À partir de 799$ Aller-Retour.</p>
                 </div>
                 <div class="absolute inset-0 bg-black opacity-40 z-10"></div> <!-- Black overlay -->
                 <img src="img/tokyo.jpg" class="object-cover absolute block h-full w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 z-10" alt="Tokyo">
@@ -215,7 +214,7 @@
             <div class="hidden duration-700 ease-in-out absolute h-full w-full" data-carousel-item>
                 <div class="absolute z-30 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
                     <h2 class="text-4xl text-white mb-2">Marrakesh, Morocco</h2>
-                    <p class="text-white text-3xl">From 699$ Round-Trip.</p>
+                    <p class="text-white text-3xl">À partir de 699$ Aller-Retour.</p>
                 </div>
                 <div class="absolute inset-0 bg-black opacity-40 z-10"></div> <!-- Black overlay -->
                 <img src="img/morocco.jpg" class="object-cover absolute block h-full w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 z-10" alt="Morroco">
@@ -225,7 +224,7 @@
             <div class="hidden duration-700 ease-in-out absolute h-full w-full" data-carousel-item>
                 <div class="absolute z-30 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
                     <h2 class="text-4xl text-white mb-2">Vancouver, Canada</h2>
-                    <p class="text-white text-3xl">From 299$ Round-Trip.</p>
+                    <p class="text-white text-3xl">À partir de 299$ Aller-Retour.</p>
                 </div>
                 <img src="img/vancouver.jpg" class="object-cover absolute block h-full w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 z-10" alt="Vancouver">
             </div>
@@ -241,16 +240,16 @@
         </div>
 
         <!-- Slider controls -->
-        <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:outline-none">
+        <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group" data-carousel-prev>
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group">
                 <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
                 </svg>
                 <span class="sr-only">Previous</span>
             </span>
         </button>
-        <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:outline-none">
+        <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group" data-carousel-next>
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group">
                 <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
                 </svg>
@@ -259,74 +258,74 @@
         </button>
     </div>
     <div class="flex flex-col items-center justify-center">
-    <p class="text-xl mb-6 pt-10 w-3/4 text-center">Unplanned adventures always make for the best memories! Explore all planes about to sell-out to hop in a break without breaking the bank.</p>           
-    <button type="button" class="text-white f--tonic text-xl uppercase bg--fuel hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg px-4 py-2 text-center mb-10 md:mr-0">EXPLORE LAST-MINUTE SEATS</button>              
+    <p class="text-xl mb-6 pt-10 w-3/4 text-center">Les aventures imprévues riment avec les meilleurs souvenirs! Explorez tous les avions sur le point d'afficher complet et sautez sur une occasion sans vous ruiner.</p>           
+    <button type="button" class="text-white f--tonic text-xl uppercase bg--fuel hover:bg-black focus:ring-4 focus:ring-blue-300 rounded-lg px-4 py-2 text-center mb-10 md:mr-0">VOLS DERNIÈRE CHANCE</button>              
 </div>    
 <div class="text-center p-10">
     <div class="text-center p-10 bg--white  rounded-lg">
-        <h2 class="text-4xl mb-6 text-center">Still need options?</h2>
-        <p class="text-xl mb-6 text-center">Tell us more about your travel plans and we'll see what flights are available in your range.</p>
+        <h2 class="text-4xl mb-6 text-center">Plus d'options?</h2>
+        <p class="text-xl mb-6 text-center">Dites-en plus sur vos projets de voyage et nous verrons quels vols sont disponibles dans votre fourchette.</p>
         <div class="flex flex-col justify-center items-center">
-        <span class="leading-9 flex flex-col lg:flex-row justify-center items-center">Plan your <a href="#" class="inline-flex items-center text-2xl f--tonic font-extrabold px-2 hover:underline">Round-Trip<img src="img/dropdown.svg" class="h-6 px-2" alt="drop-down arrow"></a>
-        From <a href="#" class="inline-flex items-center text-2xl f--tonic font-extrabold px-2 hover:underline">YQB (Québec)<img src="img/edit.svg" class="h-6 px-2" alt="edit button"></a> to
-        <a href="#" class="inline-flex items-center text-2xl f--tonic font-extrabold px-2 hover:underline">Anywhere<img src="img/dropdown.svg" class="h-6 px-2" alt="drop-down arrow"></a></span>
-        <span class="leading-9 flex flex-col lg:flex-row">in the next 
-        <a href="#" class="inline-flex items-center text-2xl f--tonic font-extrabold px-2 hover:underline">Week<img src="img/dropdown.svg" class="h-6 px-2" alt="drop-down arrow"></a>
-         under <a href="#" class="inline-flex items-center text-2xl f--tonic font-extrabold px-2 hover:underline">799$<img src="img/edit.svg" class="h-6 px-2" alt="edit button"></a></span>
+        <span class="leading-9 flex flex-col lg:flex-row justify-center items-center">Planifiez votre <a href="#" class="inline-flex items-center text-2xl f--tonic font-extrabold px-2 hover:underline">Aller-Retour<img src="img/dropdown.svg" class="h-6 px-2" alt="drop-down arrow"></a>
+        À partir de <a href="#" class="inline-flex items-center text-2xl f--tonic font-extrabold px-2 hover:underline">YQB (Québec)<img src="img/edit.svg" class="h-6 px-2" alt="edit button"></a> vers
+        <a href="#" class="inline-flex items-center text-2xl f--tonic font-extrabold px-2 hover:underline">N'importe où<img src="img/dropdown.svg" class="h-6 px-2" alt="drop-down arrow"></a></span>
+        <span class="leading-9 flex flex-col lg:flex-row">dans le.la prochain.e 
+        <a href="#" class="inline-flex items-center text-2xl f--tonic font-extrabold px-2 hover:underline">Semaine<img src="img/dropdown.svg" class="h-6 px-2" alt="drop-down arrow"></a>
+         en dessous de <a href="#" class="inline-flex items-center text-2xl f--tonic font-extrabold px-2 hover:underline">799$<img src="img/edit.svg" class="h-6 px-2" alt="edit button"></a></span>
         </div>
-         <button type="button" class="text-white f--tonic text-xl uppercase bg--fuel hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg px-4 py-2 text-center my-10 md:mr-0">TRY YOUR LUCK</button>              
+         <button type="button" class="text-white f--tonic text-xl uppercase bg--fuel hover:bg-black focus:ring-4 focus:ring-blue-300 rounded-lg px-4 py-2 text-center my-10 md:mr-0">TESTEZ VOTRE CHANCE</button>              
    </div>
         
 </section>
 
 
   <section class="container mx-auto col-span-4 m-10 flex justify-center items-center flex-col">
-    <h2 class="text-4xl my-6 px-10 text-center">Community Highlights</h2>
-    <p class="text-xl mb-6 pt-10 w-3/4 text-center">We love hearing your stories! Tag us using #highjacked on your socials so we can follow through!</p>
+    <h2 class="text-4xl my-6 px-10 text-center">Coups de coeur de la communauté</h2>
+    <p class="text-xl mb-6 pt-10 w-3/4 text-center">Nous aimons vous entendre! Utilisez le hashtag #highjacked sur vos réseaux pour que nous puissions suivre vos aventures!</p>
     
 <div class="grid grid-cols-2 md:grid-cols-3 gap-4 m-4">
     <div>
-        <img class="object-fill h-auto max-w-full rounded-lg" src="img/gallery-1.jpg" alt="">
+        <img class="object-fill h-auto max-w-full rounded-lg" src="img/gallery-1.jpg" alt="image de voyage de la communauté 1">
     </div>
     <div>
-        <img class="object-fill h-auto max-w-full rounded-lg" src="img/gallery-2.jpg" alt="">
+        <img class="object-fill h-auto max-w-full rounded-lg" src="img/gallery-2.jpg" alt="image de voyage de la communauté 2">
     </div>
     <div>
-        <img class="object-fill h-auto max-w-full rounded-lg" src="img/gallery-3.jpg" alt="">
+        <img class="object-fill h-auto max-w-full rounded-lg" src="img/gallery-3.jpg" alt="image de voyage de la communauté 3">
     </div>
     <div>
-        <img class="object-fill h-auto max-w-full rounded-lg" src="img/gallery-4.jpg" alt="">
+        <img class="object-fill h-auto max-w-full rounded-lg" src="img/gallery-4.jpg" alt="image de voyage de la communauté 4">
     </div>
     <div>
-        <img class="object-fill h-auto max-w-full rounded-lg" src="img/gallery-5.jpg" alt="">
+        <img class="object-fill h-auto max-w-full rounded-lg" src="img/gallery-5.jpg" alt="image de voyage de la communauté 5">
     </div>
     <div>
-        <img class="object-fill h-auto max-w-full rounded-lg" src="img/gallery-6.jpg" alt="">
+        <img class="object-fill h-auto max-w-full rounded-lg" src="img/gallery-6.jpg" alt="image de voyage de la communauté 6">
     </div>
 
 </div>
-
-    <h2 class="text-4xl my-6 px-10 text-center">Don't miss a flight!</h2>
-    <p class="text-xl mb-6 pt-10 w-3/4 text-center">Follow us for special deals and the latest fare sales around the globe!</p>
-    <ul class="inline-flex p-2 m-2">
-        <li>
-            <a href="#" class="m-4"><img class="h-10 hover:h-12" src="img/fb.svg" alt="Facebook Icon Link"></a>
+<div class="flex flex-col justify-center items-center">
+    <h2 class="text-4xl my-6 px-10 text-center">Ne manquez pas un vol!</h2>
+    <p class="text-xl mb-6 pt-10 w-3/4 text-center">Suivez-nous pour des offres spéciales et des alertes à rabais mondiaux!</p>
+    <ul class="flex w-full items-center justify-center flex-row">
+        <li  class="m-2">
+            <a href="#"><img class="h-10 hover:h-12" src="img/fb.svg" alt="Facebook - icône de réseaux sociaux"></a>
         </li>
-        <li>
-            <a href="#" class="m-4"><img class="h-10 hover:h-12" src="img/ig.svg" alt="Instagram Icon Link"></a>
+        <li  class="m-2 text-yellow-400">
+            <a href="#"><img class="h-10 hover:h-12" src="img/ig.svg" alt="Instagram - icône de réseaux sociaux"></a>
         </li>
-        <li>
-            <a href="#" class="m-4"><img class="h-10 hover:h-12" src="img/mail.svg" alt="Newsletter Icon Link"></a>
+        <li  class="m-2 text-yellow-400">
+            <a href="#"><img class="h-10 hover:h-12" src="img/mail.svg" alt="Newsletter - icône de réseaux sociaux"></a>
         </li>
     </ul>
-
+</div>
   </section>
 
 
 </main>
 
 <footer class="bg--charcoal">
-        <a class="flex items-center justify-center mx-auto relative bottom-8" href="index.html"><img src="img/hat.svg" class="h-20 hover:h-24" alt="High Jack Hat"></a>
+        <a class="flex items-center justify-center mx-auto relative bottom-8" href="index.html"><img src="img/hat.svg" class="h-20 hover:h-24" alt="Chapeau High Jack"></a>
         <div class="dashed-line h-4 mb-10 w-full"></div>
         </div>
   <div class="container mx-auto">
@@ -334,49 +333,49 @@
 
             <div class="col-span-full md:col-span-1">
                 <span class="flex flex-col md:flex-row justify-center md:justify-start">
-                <h2 class="mb-0 md:mb-6 text-sm font-semibold text-white uppercase">Made in Canada</h2>
-                <img src="img/canada.svg" class="h-7 mx-1 mb-1 md:mb-0" alt="Canada Red Leaf Icon">
+                <h2 class="mb-0 md:mb-6 text-sm font-semibold text-white uppercase">Fait au Canada</h2>
+                <img src="img/canada.svg" class="h-7 mx-1 mb-1 md:mb-0" alt="Feuille d'érable canadienne">
                 </span>
-                <p class="text-white">Highjacking flights since 2023.</p>
+                <p class="text-white">Fièrement en fonction depuis 2023.</p>
             </div>
             <div class="col-span-1">
                 <h2 class="mb-6 text-sm font-semibold text-white uppercase">High Jack</h2>
-                <ul class="text-gray-500 font-medium">
+                <ul class="text-gray-300 font-medium">
                     <li class="mb-4">
-                        <a href="#" class="hover:underline">Newsletter</a>
+                        <a href="#" class="hover:underline">Info-lettre</a>
                     </li>
                     <li class="mb-4">
-                        <a href="#" class="hover:underline">About Us</a>
+                        <a href="#" class="hover:underline">À propos</a>
                 </ul>
             </div>
             <div class="col-span-1">
-                <h2 class="mb-6 text-sm font-semibold text-white uppercase">Paperwork</h2>
-                <ul class="text-gray-500 font-medium">
+                <h2 class="mb-6 text-sm font-semibold text-white uppercase">La paperasse</h2>
+                <ul class="text-gray-300 font-medium">
                     <li class="mb-4">
-                        <a href="#" class="hover:underline">Privacy Policy</a>
+                        <a href="#" class="hover:underline">Politique de privacité</a>
                     </li>
                     <li class="mb-4">
-                        <a href="#" class="hover:underline">Data & Cookies</a>
+                        <a href="#" class="hover:underline">Données et Cache</a>
                     </li>
                     <li class="mb-4">
-                        <a href="#" class="hover:underline">Terms & Conditions</a>
+                        <a href="#" class="hover:underline">Termes et conditions</a>
                     </li>
                 </ul>
             </div>
             <div class="col-span-1">
                 <h2 class="mb-6 text-sm font-semibold text-white uppercase">Support</h2>
-                <ul class="text-gray-500 font-medium">
+                <ul class="text-gray-300 font-medium">
                     <li class="mb-4">
                         <a href="#" class="hover:underline">FAQs</a>
                     </li>
                     <li class="mb-4">
-                        <a href="#" class="hover:underline">Contact us</a>
+                        <a href="#" class="hover:underline">Nous joindre</a>
                     </li>
                 </ul>
             </div>
             <div>
-                <h2 class="mb-6 text-sm font-semibold text-white uppercase">BE FIRST IN LINE</h2>
-                <ul class="text-gray-500 font-medium flex flex-col">
+                <h2 class="mb-6 text-sm font-semibold text-white uppercase">Soyez premier à bord</h2>
+                <ul class="text-gray-300 font-medium flex flex-col">
                     <li class="mb-4 mr-2">
                         <a href="#" class="hover:underline">Facebook</a>
                     </li>
@@ -384,19 +383,19 @@
                     <a href="#" class="hover:underline">Instagram</a>
                 </li>
                 <li class="mb-4">
-                    <a href="#" class="hover:underline">Newsletter</a>
+                    <a href="#" class="hover:underline">Info-lettre</a>
                 </li>
                 </ul>
             </div>
             <div class="px-4 py-6 col-span-full items-center grid grid-cols-3">
                 <span class="sm:hidden md:block md:col-span-1"></span>
-                <span class="col-span-full md:col-span-1 flex justify-center items-center text-sm text-gray-500 text-center">©<a href="index.html"> HighJack™</a> 2023. All Rights Reserved.
+                <span class="col-span-full md:col-span-1 flex justify-center items-center text-sm text-gray-300 text-center">©<a href="index.html"> HighJack™</a> 2023. Tous droits réservés. Réalisé par <a class="hover:underline pl-1" href="htttps://www.anthonylemay.com"> Anthony Lemay</a>
                 </span>
                 <span class="mt-3 md:mt-0 col-span-full md:col-span-1 text-sm inline-flex justify-center md:justify-end items-center">
-                    <img src="img/language.svg" class="h-8 mr-3" alt="Language Selection Icon">
-                    <a class="text-white hover:underline" href="#">EN</a>
-                    <span class="text-gray-500 mx-2">|</span>
-                    <a class="text-gray-500 hover:underline" href="#">FR</a>
+                    <img src="img/language.svg" class="h-8 mr-3" alt="Icône de sélection de langue">
+                    <a class="text-gray-300 hover:underline" href="#">EN</a>
+                    <span class="text-gray-300 mx-2">|</span>
+                    <a class="text-white text-xl hover:underline" href="#">FR</a>
                 </span>
             </div>
   </div>

@@ -29,7 +29,7 @@ Bas de page:
 3. https://flowbite.com/docs/components/footer/
 
 
-Page «Fares»:
+Page d'accueil:
 
 4. Formulaire de recherche de vols (html seulement, non fonctionnel)
 https://tailwindcomponents.com/component/search-form
@@ -43,7 +43,7 @@ https://flowbite.com/docs/components/carousel/
 https://flowbite.com/docs/components/gallery/
 
 
-Page Records:
+Page des records:
 
 7. Cartes destinations
 https://flowbite.com/docs/components/card/
@@ -55,7 +55,7 @@ https://flowbite.com/docs/components/tables/
 https://flowbite.com/docs/typography/lists/
 
 
-Page hacks:
+Page Astuces:
 
 10. Timeline Stepper:
 https://flowbite.com/docs/components/stepper/
@@ -76,3 +76,6 @@ https://flowbite.com/docs/components/tooltips/
 https://anthonylemay.github.io/TP3-LemayAnthony
 
 
+**Lien GitHub Repo**
+
+https://github.com/anthonylemay/TP3-LemayAnthony

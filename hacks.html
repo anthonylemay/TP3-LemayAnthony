@@ -1,81 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <link rel="manifest" href="manifest.json">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>High Jack - Records</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#F7F4EB">
+    <meta name="apple-mobile-web-app-title" content="High Jack">
+    <link rel="apple-touch-icon" href="img/icons/maskable_icon_x192.png">
+
+    <meta name="theme-color" content="#2FB9FF">
+    <meta name="description" content="High Jack - Astuces - Trouvez facilement des vols à rabais">
+
+    <title>High Jack - Astuces</title>
     <script src="js/script.js" defer></script>
+    <script src="js/install.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chango&family=Modak&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/pvz5myj.css">
     <link rel="stylesheet" href="style/index.css">
-    <link rel="icon" href="img/buddy.ico" type="image/x-icon">
+    <link rel="icon" href="img/icons/favicon.ico" type="image/x-icon">
+
+    <script>
+        //Enregistrement Service Worker
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load',() => {
+                navigator.serviceWorker.register('service-worker.js')
+                .then((reg) => {
+                    console.log('Service Worker Registered successfully.', reg);
+                });
+            });
+        }
+    </script> 
+
+
 </head>
 
 <body class="bg--blue">
     <a class="screen-reader-text" href="#content">Aller au contenu principal</a>
-<header class="bg--blue">
-
-  <nav class="container w-full z-20 top-0 left-0 mx-auto">
-    <div class="grid grid-cols-2 md:grid-cols-8 gap-4 items-center mx-auto p-4">
-        <!-- Logo Section -->
-        <a href="index.html" class="flex justify-start items-center col-span-1 md:col-span-2">
-            <img src="img/logo.svg" class="h-16 mr-3 hover:h-20" alt="High Jack Logo">
-            <h1 class="text-black hover:text-white self-center text-4xl leading-7 md:text-3xl md:leading-6 lg:text-4xl lg:leading-7 f--logo uppercase whitespace-nowrap">High<br>Jack</h1>
-        </a>
-        <!-- Buttons Section -->
-        <div class="flex justify-end col-span-1 md:hidden">
-            <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm f--black rounded-lg md:hidden hover:bg-gray-100 focus:ring-2 focus:ring-gray-200" aria-controls="navbar-sticky" aria-expanded="false">
-              <span class="sr-only">Open main menu</span>
-              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-              </svg>
-            </button>
-        </div>
-        <!-- Navigation Links Section -->
-        <div class="hidden md:flex md:justify-end md:col-span-6" id="navbar-sticky">
-        <ul class="flex flex-col md:flex-row f--nav menu-text uppercase">
-            <li class="m-2 mx-3 col-span-2">
-              <a href="index.html" class="inline-flex justify-center items-center py-2 text-center text-gray-900 rounded hover:bg-gray-100 hover:px-2"><img src="img/fares.svg" class="h-8 m-1" alt="Fares Naviguation Icon">Fares</a>
-            </li>
-            <li class="m-2 mx-3 col-span-2">
-              <a href="records.html" class="inline-flex justify-center items-center py-2 text-center text-gray-900 rounded hover:bg-gray-100 hover:px-2"><img src="img/records.svg" class="h-8 m-1" alt="Records Naviguation Icon">
-                Records</a>
-            </li>
-            <li class="m-2 mx-3 col-span-2">
-              <a href="hacks.html" class="inline-flex justify-center items-center py-2 text-center underline  text-white hover:text-gray-900 rounded hover:bg-gray-100  hover:px-2"><img src="img/hacks.svg" class="h-8 m-1" alt="Hacks Naviguation Icon">Hacks</a>
-            </li>
-            <li class="ml-2 my-2 inline-flex col-span-2">
-            <button type="button" class="text-white f--tonic text-xl uppercase bg--fuel hover:bg-blue-800 focus:ring-blue-300 rounded-lg px-4 py-2 text-center mr-3 md:mr-0">Fly High</button>              
-            </li>
-          </ul>
-        </div>
-                  </div>
-</nav>
-</header>
+    <header class="bg--blue">
+    <nav class="container w-full z-20 top-0 left-0 mx-auto">
+      <div class="grid grid-cols-2 md:grid-cols-8 gap-4 items-center mx-auto p-4">
+          <a href="index.html" class="flex justify-start items-center col-span-1 md:col-span-2">
+              <img src="img/logo.svg" class="h-16 mr-3 hover:h-20" alt="High Jack Logo">
+              <h1 class="text-black hover:text-white self-center text-4xl leading-7 md:text-3xl md:leading-6 lg:text-4xl lg:leading-7 f--logo uppercase whitespace-nowrap">High<br>Jack</h1>
+          </a>
+          <div class="flex justify-end col-span-1 md:hidden">
+              <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm f--black rounded-lg md:hidden hover:bg-gray-100 focus:ring-2 focus:ring-gray-200" aria-controls="navbar-sticky" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                </svg>
+              </button>
+          </div>
+          <!-- Navigation Links Section -->
+          <div class="hidden md:flex md:justify-end md:col-span-6" id="navbar-sticky">
+          <ul class="flex flex-col md:flex-row f--nav menu-text uppercase">
+              <li class="m-2 mx-3 col-span-2">
+                <a href="index.html" class="inline-flex justify-center items-center py-2 text-center text-gray-900 rounded hover:bg-gray-100 hover:px-2"><img src="img/fares.svg" class="h-8 mr-1" alt="Fares Naviguation Icon">Accueil</a>
+              </li>
+              <li class="m-2 mx-3 col-span-2">
+                <a href="records.html" class="inline-flex justify-center items-center py-2 text-center text-gray-900 rounded hover:bg-gray-100 hover:px-2"><img src="img/records.svg" class="h-8 mr-1" alt="Records Naviguation Icon">
+                  Records</a>
+              </li>
+              <li class="m-2 mx-3 col-span-2">
+                <a href="hacks.html" class="inline-flex justify-center items-center py-2 text-center border-b-4 border-black text-black hover:text-gray-900 hover:bg-gray-100  hover:px-2"><img src="img/hacks.svg" class="h-8 mr-1" alt="Hacks Naviguation Icon">Astuces</a>
+              </li>
+              <li class="ml-2 my-2 inline-flex col-span-2">
+              <button type="button" onclick="window.location.href='index.html'" class="text-white f--tonic text-xl uppercase bg--fuel hover:bg-black focus:ring-4 focus:ring-blue-300 rounded-lg px-4 py-2 text-center mr-3 md:mr-0">VOLS À RABAIS</button>              
+              </li>
+            </ul>
+          </div>
+                    </div>
+  </nav>
+  </header>
 
 <main class="grid md:grid-cols-4 gap-4 mb-20">
 
   <section class="container mx-auto col-span-4 flex flex-col justify-center items-center my-20">
-    <img src="img/travelhacks.svg" class="h-full px-10" alt="Travel Hacks Headline">
-    <h1>Travel Hacks to high jack your next vacation!</h1>
+    <img src="img/travelhacks.svg" class="h-full px-10" alt="Astuces de voyages">
+    <h1>Astuces de voyage pour optimiser vos prochaines vacances !</h1>
   </section>
 
 
   <section class="container mx-auto col-span-4">
     <div class="grid grid-cols-4 w-4/5  mx-auto rounded-lg bg--fuel">
-    <h2 class="col-span-full text-4xl text-white my-6 text-center">Tricks to save!</h2>
-    <p class="col-span-full mx-auto text-black text-xl w-1/2 text-center mb-10"> Our average users save up to 300$ a year in flights. Here are our best tips and tricks to save tons of money for your next travels.</p>
+    <h2 class="col-span-full text-4xl text-white my-6 text-center">Astuces pour économiser!</h2>
+    <p class="col-span-full mx-auto text-black text-xl w-1/2 text-center mb-10">Nos utilisateurs moyens économisent jusqu'à 300$ par an sur les vols. Voici nos meilleurs conseils pour économiser beaucoup d'argent pour vos prochains voyages.</p>
     
     <ol class="col-span-full grid grid-cols-1 md:grid-cols-2 mx-auto text-white">                  
     <li class="col-span-1 inline-flex  mb-10 ml-2 p-3">            
         <span class="mr-4 flex items-center justify-center w-10 h-10 rounded-full -left-4 bg--charcoal">
-            <img src="img/hj-icon.svg" class="w-5 h-auto text-white" alt="High Jack App Icon">
+            <img src="img/hj-icon.svg" class="w-5 h-auto text-white" alt="High Jack - Icône application">
         </span>
         <div class="flex flex-col w-4/5">
-        <h3 class="font-medium leading-tight">1. Get High Jack</h3>
-        <p class="text-sm"><a href="#" class="hover:underline font-bold text-base hover:text-lg">Download our app on the app store</a> and never miss a deal!</p>
+        <h3 class="font-medium leading-tight">1. Obtenir High Jack</h3>
+        <p class="text-sm"><a href="#" class="hover:underline font-bold text-base hover:text-lg">Téléchargez notre application</a> sur le App Store et ne manquez aucune occasion de partir en voyage!</p>
         </div>
     </li>
     <li class="col-span-1 inline-flex  mb-10 ml-2 p-3">            
@@ -83,8 +104,8 @@
             <img src="img/creditcard.svg" class="w-5 h-auto text-white" alt="Credit Card Icon">
         </span>
         <div class="flex flex-col w-4/5">
-        <h3 class="font-medium leading-tight">2. Exclusive Credit Card Deals</h3>
-        <p class="text-sm">Don't miss out on our list of <a href="#" class="hover:underline font-bold text-base hover:text-lg"> Best Credit Card Deals available</a> for travel purposes from our partners.</p>
+        <h3 class="font-medium leading-tight">2. Cartes de crédit</h3>
+        <p class="text-sm">Ne manquez pas nos meilleurs offres de <a href="#" class="hover:underline font-bold text-base hover:text-lg">Cartes de crédit disponibles</a> orientées voyages de nos fiers partenaires.</p>
         </div>
     </li>
     <li class="col-span-1 inline-flex  mb-10 ml-2 p-3">            
@@ -92,8 +113,8 @@
             <img src="img/mailbox.svg" class="w-5 h-auto text-white" alt="Newsletter Mailbox icon">
         </span>
         <div class="flex flex-col w-4/5">
-        <h3 class="font-medium leading-tight">3. Subscribe to our Newsletter</h3>
-        <p class="text-sm"><a href="#" class="hover:underline font-bold text-base hover:text-lg">Get daily mail alerts</a> when your select destinations drop in price.</p>
+        <h3 class="font-medium leading-tight">3. L'info-lettre</h3>
+        <p class="text-sm"><a href="#" class="hover:underline font-bold text-base hover:text-lg">Recevez des alertes hebdomadaires</a> lorsque vos destinations préférées tombent à rabais.</p>
         </div>
     </li>
     <li class="col-span-1 inline-flex  mb-10 ml-2 p-3">            
@@ -101,24 +122,24 @@
             <img src="img/ticket.svg" class="w-5 h-auto text-white" alt="Plane Ticket Share Icon">
         </span>
         <div class="flex flex-col w-4/5">
-        <h3 class="font-medium leading-tight">4.Send Referals</h3>
-        <p class="text-sm"><a href="#" class="hover:underline font-bold text-base hover:text-lg">Share our app with your friends</a> through your unique link and save!</p>
+        <h3 class="font-medium leading-tight">4. Partagez l'application</h3>
+        <p class="text-sm"><a href="#" class="hover:underline font-bold text-base hover:text-lg">Partagez l'application avec vos amis </a>au travers de votre lien unique et économisez ensemble!</p>
         </div>
     </li>
 </ol>
-<button type="button" class="col-span-full mx-auto md:w-2/4 lg:w-1/4 text-white f--tonic text-xl uppercase bg--black hover:bg-white hover:text-black focus:ring-blue-300 rounded-lg px-4 py-2 text-center mt-5 mb-10">LEARN MORE</button>              
+<button type="button" class="col-span-full mx-auto md:w-2/4 lg:w-1/4 text-white f--tonic text-xl uppercase bg--black hover:bg-white hover:text-black focus:ring-blue-300 rounded-lg px-4 py-2 text-center mt-5 mb-10">EN SAVOIR PLUS</button>              
 
 </div>
 </section>
 
 
   <section class="container mx-auto col-span-4 flex justify-center items-center flex-col">
-    <h2 class="col-span-full text-4xl text-white my-6 text-center">Benefits of High Jack</h2>
+    <h2 class="col-span-full text-4xl text-white my-6 text-center">Avantages de High Jack</h2>
     <div class="col-span-full w-4/5  rounded-lg bg--fuel text-white">
 <div id="accordion-color" data-accordion="collapse" data-active-classes="bg--charcoal text-gray-100" data-inactive-classes="text-white">
     <h2 id="accordion-color-heading-1">
       <button type="button" class="flex items-center justify-between w-full p-5 text-xl text-left  rounded-t-xl  hover:bg--charcoal" data-accordion-target="#accordion-color-body-1" aria-expanded="false" aria-controls="accordion-color-body-1">
-        <span>Exclusive Last Minute Flights & Deals</span>
+        <span>Vols & Offres Exclusives de Dernière Minute</span>
         <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
           <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
         </svg>
@@ -126,12 +147,12 @@
     </h2>
     <div id="accordion-color-body-1" class="hidden" aria-labelledby="accordion-color-heading-1">
       <div class="p-5 bg-gray-900">
-        <p class="mb-2 text-white">At High Jack, we have exclusive partnerships with airlines worldwide, granting our members access to deals not available elsewhere.</p>
+        <p class="mb-2 text-white">Chez High Jack, nous avons des partenariats exclusifs avec des compagnies aériennes du monde entier, offrant à nos membres l'accès à des offres non disponibles ailleurs.</p>
         </div>
     </div>
     <h2 id="accordion-color-heading-2">
       <button type="button" class="flex items-center justify-between w-full p-5 text-xl text-left f--tonic  hover:bg--charcoal" data-accordion-target="#accordion-color-body-2" aria-expanded="false" aria-controls="accordion-color-body-2">
-        <span>Advanced A.I Scanner</span>
+        <span>Analyse par I.A. sophistiquée</span>
         <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
           <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
         </svg>
@@ -139,12 +160,12 @@
     </h2>
     <div id="accordion-color-body-2" class="hidden" aria-labelledby="accordion-color-heading-2">
       <div class="p-5 bg-gray-900">
-        <p class="mb-2 text-white">Our sophisticated AI analyzes flight trends to predict when prices are likely to drop, giving you a head start in securing the best deals.</p>
+        <p class="mb-2 text-white">Notre IA sophistiquée analyse les tendances des vols pour prédire quand les prix sont susceptibles de baisser, vous donnant une longueur d'avance pour obtenir les meilleures offres.</p>
         </div>
     </div>
     <h2 id="accordion-color-heading-3">
         <button type="button" class="flex items-center justify-between w-full p-5 text-xl text-left f--tonic  hover:bg--charcoal" data-accordion-target="#accordion-color-body-3" aria-expanded="false" aria-controls="accordion-color-body-3">
-          <span>Personalized Recommendations</span>
+          <span>Recommandations Personnalisées</span>
           <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
           </svg>
@@ -152,12 +173,12 @@
       </h2>
       <div id="accordion-color-body-3" class="hidden" aria-labelledby="accordion-color-heading-3">
         <div class="p-5 bg-gray-900">
-          <p class="mb-2 text-white">Based on your preferences and travel history, High Jack offers personalized flight recommendations to ensure every journey is memorable.</p>
+          <p class="mb-2 text-white">Selon vos préférences et votre historique de voyage, High Jack offre des recommandations de vol personnalisées pour garantir que chaque voyage soit mémorable.</p>
           </div>
       </div>
     <h2 id="accordion-color-heading-4">
       <button type="button" class="flex items-center justify-between w-full p-5 text-xl text-left f--tonic hover:bg--charcoal" data-accordion-target="#accordion-color-body-4" aria-expanded="false" aria-controls="accordion-color-body-4">
-        <span>Eco-Friendly Options</span>
+        <span>Options Éco-responsables</span>
         <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
           <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
         </svg>
@@ -165,7 +186,7 @@
     </h2>
     <div id="accordion-color-body-4" class="hidden" aria-labelledby="accordion-color-heading-4">
       <div class="p-5 bg-gray-900">
-        <p class="mb-2 text-white">We're committed to sustainable travel. High Jack highlights eco-friendly flights, helping you make greener choices on your travels.</p>
+        <p class="mb-2 text-white">Nous sommes engagés envers un voyage durable. High Jack met en avant les vols écologiques, vous aidant à faire des choix plus verts lors de vos voyages.</p>
         
       </div>
     </div>
@@ -176,61 +197,61 @@
   </section>
   <section class="container mx-auto col-span-4">
     <div class="grid grid-cols-6">
-    <h2 class="col-span-full mx-auto text-4xl text-white my-6 px-10 text-center inline-flex justify-center items-center"><img src="img/basketball.svg" class="h-8 px-2" alt="basketball icon">JOIN OUR NEWSLETTER, YOU NEW BALLER!</h2>
+    <h2 class="col-span-full mx-auto text-4xl text-white my-6 px-10 text-center inline-flex justify-center items-center"><img src="img/basketball.svg" class="h-8 px-2" alt="basketball icon">Joignez nous!</h2>
     
 <form class="bg--fuel p-10 rounded-lg col-span-full w-4/5 mx-auto" id="account-form" onsubmit="return validateContactForm()" novalidate action="confirm-subscription.html">
     <div class="relative z-0 w-full mb-6 group input-control">
         <input type="email" name="email" id="email" class="block py-2.5 px-0 w-full text-sm bg-transparent border-b-4 appearance-none text-white focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-        <label for="email" class="peer-focus:font-medium absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email address</label>
+        <label for="email" class="peer-focus:font-medium absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Courriel</label>
         <div class="errorMessage"></div>
       </div>
     <div class="relative z-0 w-full mb-6 group input-control">
         <input type="text" autocomplete="username" name="username" id="username" class="block py-2.5 px-0 w-full text-sm bg-transparent border-b-4 appearance-none text-white focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-        <label for="username" class="peer-focus:font-medium absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Username</label>
+        <label for="username" class="peer-focus:font-medium absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Nom d'utilisateur</label>
         <div class="errorMessage"></div>
       </div>
     <div class="relative z-0 w-full mb-6 group input-control">
         <input data-tooltip-target="tooltip-no-arrow-1" type="password" autocomplete="new-password" name="password" id="password" class="block py-2.5 px-0 w-full text-sm bg-transparent border-b-4 appearance-none text-white focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
         <div id="tooltip-no-arrow-1" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip ">
-          Your password must have a minimum of 8 characters and include at least one uppercase letter, one lowercase letter, and one number.
+          Votre mot de passe doit comporter au minimum 8 caractères et inclure au moins une majuscule, une minuscule et un chiffre.
         </div>
-        <label for="password" class="peer-focus:font-medium absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Password</label>
+        <label for="password" class="peer-focus:font-medium absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Mot de Passe</label>
         <div class="errorMessage"></div>
       </div>
     <div class="relative z-0 w-full mb-6 group input-control">
         <input type="password" autocomplete="new-password" name="repeat_password" id="repeat_password" class="block py-2.5 px-0 w-full text-sm bg-transparent border-b-4 appearance-none text-white focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-        <label for="repeat_password" class="peer-focus:font-medium absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Confirm password</label>
+        <label for="repeat_password" class="peer-focus:font-medium absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Confirmez le Mot de Passe</label>
         <div class="errorMessage"></div>
       </div>
 
     <div class="grid md:grid-cols-2 md:gap-6">
       <div class="relative z-0 w-full mb-6 group input-control">
           <input type="text" name="first_name" id="first_name" class="block py-2.5 px-0 w-full text-sm bg-transparent border-b-4 appearance-none text-white focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-          <label for="first_name" class="peer-focus:font-medium absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">First name</label>
+          <label for="first_name" class="peer-focus:font-medium absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Prénom</label>
           <div class="errorMessage"></div>
         </div>
       <div class="relative z-0 w-full mb-6 group input-control">
           <input type="text" name="last_name" id="last_name" class="block py-2.5 px-0 w-full text-sm bg-transparent border-b-4 appearance-none text-white focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-          <label for="last_name" class="peer-focus:font-medium absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Last name</label>
+          <label for="last_name" class="peer-focus:font-medium absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Nom de famille</label>
           <div class="errorMessage"></div>
         </div>
     </div>
     <div class="grid md:grid-cols-2 md:gap-6">
       <div class="relative z-0 w-full mb-6 group input-control">
           <input data-tooltip-target="tooltip-no-arrow-2" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="phone" id="phone" class="block py-2.5 px-0 w-full text-sm bg-transparent border-b-4 appearance-none text-white focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-          <label for="phone" class="peer-focus:font-medium absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Phone number</label>
+          <label for="phone" class="peer-focus:font-medium absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Téléphone</label>
           <div id="tooltip-no-arrow-2" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip ">
-            Format accepted: 123-456-7890
+            Format accepté: 123-456-7890
           </div>
           <div class="errorMessage"></div>
         </div>
       <div class="relative z-0 w-full mb-6 group input-control">
         <input type="text" name="airport" id="airport" class="block py-2.5 px-0 w-full text-sm bg-transparent border-b-4 appearance-none text-white focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-        <label for="airport" class="peer-focus:font-medium absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Favorite Airport</label>
+        <label for="airport" class="peer-focus:font-medium absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Aéroport préféré</label>
         <div class="errorMessage"></div>
       </div>
     </div>
-    <button type="submit" class="col-span-full mx-auto md:w-2/4 lg:w-1/4 text-white f--tonic text-xl uppercase bg--black hover:bg-white hover:text-black focus:ring-blue-300 rounded-lg px-4 py-2 text-center mt-5 mb-10">Submit</button>              
+    <button type="submit" class="col-span-full mx-auto md:w-2/4 lg:w-1/4 text-white f--tonic text-xl uppercase bg--black hover:bg-white hover:text-black focus:ring-blue-300 rounded-lg px-4 py-2 text-center mt-5 mb-10">S'inscrire</button>              
     </form>
   
 </section>
@@ -240,82 +261,82 @@
 </main>
 
 <footer class="bg--charcoal">
-    <a class="flex items-center justify-center mx-auto relative bottom-8" href="index.html"><img src="img/hat.svg" class="h-20 hover:h-24" alt="High Jack Hat"></a>
-    <div class="dashed-line h-4 mb-10 w-full"></div>
-    </div>
+  <a class="flex items-center justify-center mx-auto relative bottom-8" href="index.html"><img src="img/hat.svg" class="h-20 hover:h-24" alt="Chapeau High Jack"></a>
+  <div class="dashed-line h-4 mb-10 w-full"></div>
+  </div>
 <div class="container mx-auto">
 <div class="grid grid-cols-2 gap-8 px-4 py-6 md:grid-cols-5 text-center md:text-left">
 
-        <div class="col-span-full md:col-span-1">
-            <span class="flex flex-col md:flex-row justify-center md:justify-start">
-            <h2 class="mb-0 md:mb-6 text-sm font-semibold text-white uppercase">Made in Canada</h2>
-            <img src="img/canada.svg" class="h-7 mx-1 mb-1 md:mb-0" alt="Canada Red Leaf Icon">
-            </span>
-            <p class="text-white">Highjacking flights since 2023.</p>
-        </div>
-        <div class="col-span-1">
-            <h2 class="mb-6 text-sm font-semibold text-white uppercase">High Jack</h2>
-            <ul class="text-gray-500 font-medium">
-                <li class="mb-4">
-                    <a href="#" class="hover:underline">Newsletter</a>
-                </li>
-                <li class="mb-4">
-                    <a href="#" class="hover:underline">About Us</a>
-            </ul>
-        </div>
-        <div class="col-span-1">
-            <h2 class="mb-6 text-sm font-semibold text-white uppercase">Paperwork</h2>
-            <ul class="text-gray-500 font-medium">
-                <li class="mb-4">
-                    <a href="#" class="hover:underline">Privacy Policy</a>
-                </li>
-                <li class="mb-4">
-                    <a href="#" class="hover:underline">Data & Cookies</a>
-                </li>
-                <li class="mb-4">
-                    <a href="#" class="hover:underline">Terms & Conditions</a>
-                </li>
-            </ul>
-        </div>
-        <div class="col-span-1">
-            <h2 class="mb-6 text-sm font-semibold text-white uppercase">Support</h2>
-            <ul class="text-gray-500 font-medium">
-                <li class="mb-4">
-                    <a href="#" class="hover:underline">FAQs</a>
-                </li>
-                <li class="mb-4">
-                    <a href="#" class="hover:underline">Contact us</a>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <h2 class="mb-6 text-sm font-semibold text-white uppercase">BE FIRST IN LINE</h2>
-            <ul class="text-gray-500 font-medium flex flex-col">
-                <li class="mb-4 mr-2">
-                    <a href="#" class="hover:underline">Facebook</a>
-                </li>
-                <li class="mb-4 mr-2">
-                <a href="#" class="hover:underline">Instagram</a>
-            </li>
-            <li class="mb-4">
-                <a href="#" class="hover:underline">Newsletter</a>
-            </li>
-            </ul>
-        </div>
-        <div class="px-4 py-6 col-span-full items-center grid grid-cols-3">
-            <span class="sm:hidden md:block md:col-span-1"></span>
-            <span class="col-span-full md:col-span-1 flex justify-center items-center text-sm text-gray-500 text-center">©<a href="index.html"> HighJack™</a> 2023. All Rights Reserved.
-            </span>
-            <span class="mt-3 md:mt-0 col-span-full md:col-span-1 text-sm inline-flex justify-center md:justify-end items-center">
-                <img src="img/language.svg" class="h-8 mr-3" alt="Language Selection Icon">
-                <a class="text-white hover:underline" href="#">EN</a>
-                <span class="text-gray-500 mx-2">|</span>
-                <a class="text-gray-500 hover:underline" href="#">FR</a>
-            </span>
-        </div>
+      <div class="col-span-full md:col-span-1">
+          <span class="flex flex-col md:flex-row justify-center md:justify-start">
+          <h2 class="mb-0 md:mb-6 text-sm font-semibold text-white uppercase">Fait au Canada</h2>
+          <img src="img/canada.svg" class="h-7 mx-1 mb-1 md:mb-0" alt="Feuille d'érable canadienne">
+          </span>
+          <p class="text-white">Fièrement en fonction depuis 2023.</p>
+      </div>
+      <div class="col-span-1">
+          <h2 class="mb-6 text-sm font-semibold text-white uppercase">High Jack</h2>
+          <ul class="text-gray-300 font-medium">
+              <li class="mb-4">
+                  <a href="#" class="hover:underline">Info-lettre</a>
+              </li>
+              <li class="mb-4">
+                  <a href="#" class="hover:underline">À propos</a>
+          </ul>
+      </div>
+      <div class="col-span-1">
+          <h2 class="mb-6 text-sm font-semibold text-white uppercase">La paperasse</h2>
+          <ul class="text-gray-300 font-medium">
+              <li class="mb-4">
+                  <a href="#" class="hover:underline">Politique de privacité</a>
+              </li>
+              <li class="mb-4">
+                  <a href="#" class="hover:underline">Données et Cache</a>
+              </li>
+              <li class="mb-4">
+                  <a href="#" class="hover:underline">Termes et conditions</a>
+              </li>
+          </ul>
+      </div>
+      <div class="col-span-1">
+          <h2 class="mb-6 text-sm font-semibold text-white uppercase">Support</h2>
+          <ul class="text-gray-300 font-medium">
+              <li class="mb-4">
+                  <a href="#" class="hover:underline">FAQs</a>
+              </li>
+              <li class="mb-4">
+                  <a href="#" class="hover:underline">Nous joindre</a>
+              </li>
+          </ul>
+      </div>
+      <div>
+          <h2 class="mb-6 text-sm font-semibold text-white uppercase">Soyez premier à bord</h2>
+          <ul class="text-gray-300 font-medium flex flex-col">
+              <li class="mb-4 mr-2">
+                  <a href="#" class="hover:underline">Facebook</a>
+              </li>
+              <li class="mb-4 mr-2">
+              <a href="#" class="hover:underline">Instagram</a>
+          </li>
+          <li class="mb-4">
+              <a href="#" class="hover:underline">Info-lettre</a>
+          </li>
+          </ul>
+      </div>
+      <div class="px-4 py-6 col-span-full items-center grid grid-cols-3">
+          <span class="sm:hidden md:block md:col-span-1"></span>
+          <span class="col-span-full md:col-span-1 flex justify-center items-center text-sm text-gray-300 text-center">©<a href="index.html"> HighJack™</a> 2023. Tous droits réservés. Réalisé par <a class="hover:underline pl-1" href="htttps://www.anthonylemay.com"> Anthony Lemay</a>
+          </span>
+          <span class="mt-3 md:mt-0 col-span-full md:col-span-1 text-sm inline-flex justify-center md:justify-end items-center">
+              <img src="img/language.svg" class="h-8 mr-3" alt="Icône de sélection de langue">
+              <a class="text-gray-300 hover:underline" href="#">EN</a>
+              <span class="text-gray-300 mx-2">|</span>
+              <a class="text-white text-xl hover:underline" href="#">FR</a>
+          </span>
+      </div>
 </div>
-</footer>
 
+</footer>
 
 <script src="node_modules/flowbite/dist/flowbite.min.js"></script>
 </body>
