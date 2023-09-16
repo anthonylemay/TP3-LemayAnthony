@@ -119,4 +119,28 @@ nav ul.f--nav li a {
 
 .dashed-line {
   background-image: repeating-linear-gradient(to right, white 0, white 16rem, transparent 16rem, transparent 20rem);
+}
+
+.input-control {
+  display: flex;
+  flex-direction: column;
+}
+.input-control .errorMessage {
+  color: #fcb0b0;
+  font-size: 1rem;
+  line-height: 1rem;
+  font-family: "loos-compressed", sans-serif;
+  font-weight: 700;
+}
+
+.errorMessage {
+  display: none;
+}
+
+.input-control.success input, .input-control.success textarea {
+  border-color: #b0fcce;
+}
+
+.input-control.error input, .input-control.error textarea {
+  border-color: #fcb0b0;
 }/*# sourceMappingURL=style.css.map */

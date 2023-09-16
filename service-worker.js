@@ -1,8 +1,13 @@
-const CACHE_NAME = 'static-cache-v1';
+const CACHE_NAME = 'static-cache-v2';
 
 const FILES_TO_CACHE = [
     'offline.html',
+    'node_modules/flowbite/dist/flowbite.min.js',
+    'js/script.js',
+    'tailwind.config.js',
     'index.html',
+    'records.html',
+    'hacks.html',
     'img/basketball.svg',
     'img/canada.svg',
     'img/capetown.jpg',

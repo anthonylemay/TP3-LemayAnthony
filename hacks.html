@@ -178,43 +178,57 @@
     <div class="grid grid-cols-6">
     <h2 class="col-span-full mx-auto text-4xl text-white my-6 px-10 text-center inline-flex justify-center items-center"><img src="img/basketball.svg" class="h-8 px-2" alt="basketball icon">JOIN OUR NEWSLETTER, YOU NEW BALLER!</h2>
     
-<form class="bg--fuel p-10 rounded-lg col-span-full w-4/5 mx-auto">
-    <div class="relative z-0 w-full mb-6 group">
-        <input type="email" name="floating_email" id="floating_email" class="block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-gray-400 appearance-none text-white focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-        <label for="floating_email" class="peer-focus:font-medium absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email address</label>
-    </div>
-    <div class="relative z-0 w-full mb-6 group">
-        <input type="text" name="floating_username" id="floating_username" class="block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-gray-400 appearance-none text-white focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-        <label for="floating_username" class="peer-focus:font-medium absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Username</label>
-    </div>
-    <div class="relative z-0 w-full mb-6 group">
-        <input type="password" name="floating_password" id="floating_password" class="block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-gray-400 appearance-none text-white focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-        <label for="floating_password" class="peer-focus:font-medium absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Password</label>
-    </div>
-    <div class="relative z-0 w-full mb-6 group">
-        <input type="password" name="repeat_password" id="floating_repeat_password" class="block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-gray-400 appearance-none text-white focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-        <label for="floating_repeat_password" class="peer-focus:font-medium absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Confirm password</label>
-    </div>
+<form class="bg--fuel p-10 rounded-lg col-span-full w-4/5 mx-auto" id="account-form" onsubmit="return validateContactForm()" novalidate action="confirm-subscription.html">
+    <div class="relative z-0 w-full mb-6 group input-control">
+        <input type="email" name="email" id="email" class="block py-2.5 px-0 w-full text-sm bg-transparent border-b-4 appearance-none text-white focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+        <label for="email" class="peer-focus:font-medium absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email address</label>
+        <div class="errorMessage"></div>
+      </div>
+    <div class="relative z-0 w-full mb-6 group input-control">
+        <input type="text" autocomplete="username" name="username" id="username" class="block py-2.5 px-0 w-full text-sm bg-transparent border-b-4 appearance-none text-white focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+        <label for="username" class="peer-focus:font-medium absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Username</label>
+        <div class="errorMessage"></div>
+      </div>
+    <div class="relative z-0 w-full mb-6 group input-control">
+        <input data-tooltip-target="tooltip-no-arrow-1" type="password" autocomplete="new-password" name="password" id="password" class="block py-2.5 px-0 w-full text-sm bg-transparent border-b-4 appearance-none text-white focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+        <div id="tooltip-no-arrow-1" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip ">
+          Your password must have a minimum of 8 characters and include at least one uppercase letter, one lowercase letter, and one number.
+        </div>
+        <label for="password" class="peer-focus:font-medium absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Password (Min. 8 chars, 1 Special Char, 1 Uppercase, 1 Lowercase & 1 Number)</label>
+        <div class="errorMessage"></div>
+      </div>
+    <div class="relative z-0 w-full mb-6 group input-control">
+        <input type="password" autocomplete="new-password" name="repeat_password" id="repeat_password" class="block py-2.5 px-0 w-full text-sm bg-transparent border-b-4 appearance-none text-white focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+        <label for="repeat_password" class="peer-focus:font-medium absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Confirm password</label>
+        <div class="errorMessage"></div>
+      </div>
 
     <div class="grid md:grid-cols-2 md:gap-6">
-      <div class="relative z-0 w-full mb-6 group">
-          <input type="text" name="floating_first_name" id="floating_first_name" class="block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-gray-400 appearance-none text-white focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-          <label for="floating_first_name" class="peer-focus:font-medium absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">First name</label>
-      </div>
-      <div class="relative z-0 w-full mb-6 group">
-          <input type="text" name="floating_last_name" id="floating_last_name" class="block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-gray-400 appearance-none text-white focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-          <label for="floating_last_name" class="peer-focus:font-medium absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Last name</label>
-      </div>
+      <div class="relative z-0 w-full mb-6 group input-control">
+          <input type="text" name="first_name" id="first_name" class="block py-2.5 px-0 w-full text-sm bg-transparent border-b-4 appearance-none text-white focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+          <label for="first_name" class="peer-focus:font-medium absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">First name</label>
+          <div class="errorMessage"></div>
+        </div>
+      <div class="relative z-0 w-full mb-6 group input-control">
+          <input type="text" name="last_name" id="last_name" class="block py-2.5 px-0 w-full text-sm bg-transparent border-b-4 appearance-none text-white focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+          <label for="last_name" class="peer-focus:font-medium absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Last name</label>
+          <div class="errorMessage"></div>
+        </div>
     </div>
     <div class="grid md:grid-cols-2 md:gap-6">
-      <div class="relative z-0 w-full mb-6 group">
-          <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="floating_phone" id="floating_phone" class="block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-gray-400 appearance-none text-white focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-          <label for="floating_phone" class="peer-focus:font-medium absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Phone number (123-456-7890)</label>
+      <div class="relative z-0 w-full mb-6 group input-control">
+          <input data-tooltip-target="tooltip-no-arrow-2" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="phone" id="phone" class="block py-2.5 px-0 w-full text-sm bg-transparent border-b-4 appearance-none text-white focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+          <label for="phone" class="peer-focus:font-medium absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Phone number (123-456-7890)</label>
+          <div id="tooltip-no-arrow-2" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip ">
+            Format accepted: 123-456-7890
+          </div>
+          <div class="errorMessage"></div>
+        </div>
+      <div class="relative z-0 w-full mb-6 group input-control">
+        <input type="text" name="airport" id="airport" class="block py-2.5 px-0 w-full text-sm bg-transparent border-b-4 appearance-none text-white focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+        <label for="airport" class="peer-focus:font-medium absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Favorite Airport</label>
+        <div class="errorMessage"></div>
       </div>
-      <div class="relative z-0 w-full mb-6 group">
-        <input type="text" name="floating_airport" id="floating_airport" class="block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-gray-400 appearance-none text-white focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-        <label for="floating_airport" class="peer-focus:font-medium absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Favorite Airport</label>
-    </div>
     </div>
     <button type="submit" class="col-span-full mx-auto md:w-2/4 lg:w-1/4 text-white f--tonic text-xl uppercase bg--black hover:bg-white hover:text-black focus:ring-blue-300 rounded-lg px-4 py-2 text-center mt-5 mb-10">Submit</button>              
     </form>

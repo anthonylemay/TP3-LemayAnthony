@@ -25,3 +25,28 @@
           transparent 20rem /* Gap between dashes */
       );
   }
+
+.input-control{
+    display:flex;
+    flex-direction:column;
+    & .errorMessage{
+      color: colors.$red;
+      font-size: fonts.$font-size--min;
+      line-height: fonts.$font-size--min;
+      font-family: fonts.$p;
+      font-weight: fonts.$bold;
+    }
+}
+
+.errorMessage{
+  display:none;
+}
+
+.input-control.success input, .input-control.success textarea{
+    border-color: colors.$success;
+    
+}
+
+.input-control.error input, .input-control.error textarea{
+    border-color: colors.$red;
+}

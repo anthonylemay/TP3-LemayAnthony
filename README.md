@@ -3,7 +3,7 @@ Travail Pratique final du cours d'intégration des interfaces web 2
 
 **Mandat**
 
-Site Web fictif usant d'une PWA en tailwind et scss.
+Site Web fictif de High Jack, une application de recherche de vols à rabais usant une PWA en tailwind et scss uniquement.
 
 **Cours**
 
@@ -65,6 +65,10 @@ https://flowbite.com/docs/components/accordion/
 
 12. Formulaire 8 entrées (fonctionnel):
 https://flowbite.com/docs/components/forms/
+
+13. Tooltip:
+https://flowbite.com/docs/components/tooltips/
+
 
 
 **Lien Github Pages**
