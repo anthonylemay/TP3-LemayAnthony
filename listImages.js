@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const imgDirectory = path.join(__dirname, 'img'); // Assuming this script is at the root of your project
+const imgDirectory = path.join(__dirname, 'img'); // Get all img images Imgs Script
 
 fs.readdir(imgDirectory, (err, files) => {
     if (err) {

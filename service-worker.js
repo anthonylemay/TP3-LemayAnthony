@@ -1,13 +1,17 @@
 const CACHE_NAME = 'static-cache-v2';
 
 const FILES_TO_CACHE = [
-    'offline.html',
+    //Scripts
     'node_modules/flowbite/dist/flowbite.min.js',
     'js/script.js',
     'tailwind.config.js',
+    //Html Pages
+    'offline.html',
+    'confirm-subscription.html',
     'index.html',
     'records.html',
     'hacks.html',
+    //Imgs
     'img/basketball.svg',
     'img/canada.svg',
     'img/capetown.jpg',
@@ -49,7 +53,8 @@ const FILES_TO_CACHE = [
     'img/ticket.svg',
     'img/tokyo.jpg',
     'img/travelhacks.svg',
-    'img/vancouver.jpg'
+    'img/vancouver.jpg',
+    'img/bonjourhigh.svg'
 ];
 
 self.addEventListener('install',(evt) =>{
