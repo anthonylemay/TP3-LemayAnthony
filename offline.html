@@ -143,24 +143,20 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-2 p-2 rounded">
                     <div class="flex rounded bg-stone-100 items-center p-2 ">
-                        <input type="text" placeholder="Lieu de départ"
-                               class="bg-stone-100 max-w-full text-gray-700"/>
+                        <input type="text" placeholder="Lieu de départ" class="bg-stone-100 max-w-full text-gray-700"/>
                     </div>
                     <div class="flex rounded bg-stone-100 items-center p-2 ">
-                        <input type="text" placeholder="Où allez-vous?"
-                               class="bg-stone-100 max-w-full text-gray-700"/>
+                        <input type="text" placeholder="Où allez-vous?" class="bg-stone-100 max-w-full text-gray-700"/>
                     </div>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-2 p-2 rounded">
                     <div class="flex rounded bg-stone-100 items-center p-2 ">
                         <label for="date-dept" class="px-2 text-gray-900">Départ</label>
-                        <input id="date-dept" type="date" placeholder="Date de départ"
-                               class="bg-stone-100 max-w-full text-gray-700"/>
+                        <input id="date-dept" type="date" class="bg-stone-100 max-w-full text-gray-700"/>
                     </div>
                     <div class="flex rounded bg-stone-100 items-center p-2 ">
                         <label for="date-ret" class="px-2 text-gray-900">Retour</label>
-                        <input id="date-ret" type="date" placeholder="Date de retour"
-                               class="bg-stone-100 max-w-full text-gray-700"/>
+                        <input id="date-ret" type="date" class="bg-stone-100 max-w-full text-gray-700"/>
                     </div>
                 </div>
             </div>
@@ -176,108 +172,109 @@
   </section>
 
 
-  <section class="container mx-auto col-span-4 rounded-lg">
-    <h2 class="text-4xl my-6 px-10 text-center">Sièges dernières minutes de <a href="#" class="inline-flex items-center text-4xl f--tonic font-extrabold px-2 hover:underline">YQB (Québec)<img src="img/edit.svg" class="h-8 px-2" alt="edit button"></a></h2>
-    <div id="default-carousel" class="px-10 relative w-full mx-auto md:w-4/5" data-carousel="slide">
-        <!-- Carousel wrapper -->
-        <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-            <!-- Item 1 -->
-            <div class="hidden duration-700 ease-in-out absolute h-full w-full" data-carousel-item>
-                <div class="absolute z-30 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
-                    <h2 class="text-4xl text-white mb-2">Lisbon, Portugal</h2>
-                    <p class="text-white text-3xl">À partir de 459$ Aller-Retour.</p>
+    <section class="container mx-auto col-span-4 rounded-lg">
+        <h2 class="text-4xl my-6 px-10 text-center">Sièges dernières minutes de <a href="#" class="inline-flex items-center text-4xl f--tonic font-extrabold px-2 hover:underline">YQB (Québec)<img src="img/edit.svg" class="h-8 px-2" alt="edit button"></a></h2>
+        <div id="default-carousel" class="px-10 relative w-full mx-auto md:w-4/5" data-carousel="slide">
+            <!-- Carousel wrapper -->
+            <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                <!-- Item 1 -->
+                <div class="hidden duration-700 ease-in-out absolute h-full w-full" data-carousel-item>
+                    <div class="absolute z-30 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+                        <h2 class="text-4xl text-white mb-2">Lisbon, Portugal</h2>
+                        <p class="text-white text-3xl">À partir de 459$ Aller-Retour.</p>
+                    </div>
+                    <div class="absolute inset-0 bg-black opacity-40 z-10"></div> <!-- Black overlay -->
+                    <img src="img/lisbon.jpg" class="object-cover absolute block h-full w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 z-10" alt="Lisbon">
                 </div>
-                <div class="absolute inset-0 bg-black opacity-40 z-10"></div> <!-- Black overlay -->
-                <img src="img/lisbon.jpg" class="object-cover absolute block h-full w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 z-10" alt="Lisbon">
-            </div>
-        
-            <!-- Item 2 -->
-            <div class="hidden duration-700 ease-in-out absolute h-full w-full" data-carousel-item>
-                <div class="absolute z-30 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
-                    <h2 class="text-4xl text-white mb-2">Paris, France</h2>
-                    <p class="text-white text-3xl">À partir de 359$ Aller-Retour.</p>
+            
+                <!-- Item 2 -->
+                <div class="hidden duration-700 ease-in-out absolute h-full w-full" data-carousel-item>
+                    <div class="absolute z-30 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+                        <h2 class="text-4xl text-white mb-2">Paris, France</h2>
+                        <p class="text-white text-3xl">À partir de 359$ Aller-Retour.</p>
+                    </div>
+                    <div class="absolute inset-0 bg-black opacity-40 z-10"></div> <!-- Black overlay -->
+                    <img src="img/paris.jpg" class="object-cover absolute block h-full w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 z-10" alt="Paris">
                 </div>
-                <div class="absolute inset-0 bg-black opacity-40 z-10"></div> <!-- Black overlay -->
-                <img src="img/paris.jpg" class="object-cover absolute block h-full w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 z-10" alt="Paris">
-            </div>
-        
-            <!-- Item 3 -->
-            <div class="hidden duration-700 ease-in-out absolute h-full w-full" data-carousel-item>
-                <div class="absolute z-30 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
-                    <h2 class="text-4xl text-white mb-2">Tokyo, Japan</h2>
-                    <p class="text-white text-3xl">À partir de 799$ Aller-Retour.</p>
+            
+                <!-- Item 3 -->
+                <div class="hidden duration-700 ease-in-out absolute h-full w-full" data-carousel-item>
+                    <div class="absolute z-30 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+                        <h2 class="text-4xl text-white mb-2">Tokyo, Japan</h2>
+                        <p class="text-white text-3xl">À partir de 799$ Aller-Retour.</p>
+                    </div>
+                    <div class="absolute inset-0 bg-black opacity-40 z-10"></div> <!-- Black overlay -->
+                    <img src="img/tokyo.jpg" class="object-cover absolute block h-full w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 z-10" alt="Tokyo">
                 </div>
-                <div class="absolute inset-0 bg-black opacity-40 z-10"></div> <!-- Black overlay -->
-                <img src="img/tokyo.jpg" class="object-cover absolute block h-full w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 z-10" alt="Tokyo">
-            </div>
-        
-            <!-- Item 4 -->
-            <div class="hidden duration-700 ease-in-out absolute h-full w-full" data-carousel-item>
-                <div class="absolute z-30 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
-                    <h2 class="text-4xl text-white mb-2">Marrakesh, Morocco</h2>
-                    <p class="text-white text-3xl">À partir de 699$ Aller-Retour.</p>
+            
+                <!-- Item 4 -->
+                <div class="hidden duration-700 ease-in-out absolute h-full w-full" data-carousel-item>
+                    <div class="absolute z-30 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+                        <h2 class="text-4xl text-white mb-2">Marrakesh, Morocco</h2>
+                        <p class="text-white text-3xl">À partir de 699$ Aller-Retour.</p>
+                    </div>
+                    <div class="absolute inset-0 bg-black opacity-40 z-10"></div> <!-- Black overlay -->
+                    <img src="img/morocco.jpg" class="object-cover absolute block h-full w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 z-10" alt="Morroco">
                 </div>
-                <div class="absolute inset-0 bg-black opacity-40 z-10"></div> <!-- Black overlay -->
-                <img src="img/morocco.jpg" class="object-cover absolute block h-full w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 z-10" alt="Morroco">
-            </div>
-        
-            <!-- Item 5 -->
-            <div class="hidden duration-700 ease-in-out absolute h-full w-full" data-carousel-item>
-                <div class="absolute z-30 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
-                    <h2 class="text-4xl text-white mb-2">Vancouver, Canada</h2>
-                    <p class="text-white text-3xl">À partir de 299$ Aller-Retour.</p>
+            
+                <!-- Item 5 -->
+                <div class="hidden duration-700 ease-in-out absolute h-full w-full" data-carousel-item>
+                    <div class="absolute z-30 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+                        <h2 class="text-4xl text-white mb-2">Vancouver, Canada</h2>
+                        <p class="text-white text-3xl">À partir de 299$ Aller-Retour.</p>
+                    </div>
+                    <img src="img/vancouver.jpg" class="object-cover absolute block h-full w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 z-10" alt="Vancouver">
                 </div>
-                <img src="img/vancouver.jpg" class="object-cover absolute block h-full w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 z-10" alt="Vancouver">
-            </div>
-        </div>     
+            </div>     
 
-        <!-- Slider indicators -->
-        <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
-            <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+            <!-- Slider indicators -->
+            <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+            </div>
+
+            <!-- Slider controls -->
+            <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group" data-carousel-prev>
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group">
+                    <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                    </svg>
+                    <span class="sr-only">Previous</span>
+                </span>
+            </button>
+            <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group" data-carousel-next>
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group">
+                    <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                    </svg>
+                    <span class="sr-only">Next</span>
+                </span>
+            </button>
         </div>
-
-        <!-- Slider controls -->
-        <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group" data-carousel-prev>
-            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group">
-                <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-                </svg>
-                <span class="sr-only">Previous</span>
-            </span>
-        </button>
-        <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group" data-carousel-next>
-            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group">
-                <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-                </svg>
-                <span class="sr-only">Next</span>
-            </span>
-        </button>
+        <div class="flex flex-col items-center justify-center">
+        <p class="text-xl mb-6 pt-10 w-3/4 text-center">Les aventures imprévues riment avec les meilleurs souvenirs! Explorez tous les avions sur le point d'afficher complet et sautez sur une occasion sans vous ruiner.</p>           
+        <button type="button" class="text-white f--tonic text-xl uppercase bg--fuel hover:bg-black focus:ring-4 focus:ring-blue-300 rounded-lg px-4 py-2 text-center mb-10 md:mr-0">VOLS DERNIÈRE CHANCE</button>              
+    </div>    
+    <div class="text-center p-10">
+        <div class="text-center p-10 bg--white  rounded-lg">
+            <h2 class="text-4xl mb-6 text-center">Plus d'options?</h2>
+            <p class="text-xl mb-6 text-center">Dites-en plus sur vos projets de voyage et nous verrons quels vols sont disponibles dans votre fourchette.</p>
+            <div class="flex flex-col justify-center items-center">
+            <span class="leading-9 flex flex-col lg:flex-row justify-center items-center">Planifiez votre <a href="#" class="inline-flex items-center text-2xl f--tonic font-extrabold px-2 hover:underline">Aller-Retour<img src="img/dropdown.svg" class="h-6 px-2" alt="drop-down arrow"></a>
+            À partir de <a href="#" class="inline-flex items-center text-2xl f--tonic font-extrabold px-2 hover:underline">YQB (Québec)<img src="img/edit.svg" class="h-6 px-2" alt="edit button"></a> vers
+            <a href="#" class="inline-flex items-center text-2xl f--tonic font-extrabold px-2 hover:underline">N'importe où<img src="img/dropdown.svg" class="h-6 px-2" alt="drop-down arrow"></a></span>
+            <span class="leading-9 flex flex-col lg:flex-row">dans le.la prochain.e 
+            <a href="#" class="inline-flex items-center text-2xl f--tonic font-extrabold px-2 hover:underline">Semaine<img src="img/dropdown.svg" class="h-6 px-2" alt="drop-down arrow"></a>
+            en dessous de <a href="#" class="inline-flex items-center text-2xl f--tonic font-extrabold px-2 hover:underline">799$<img src="img/edit.svg" class="h-6 px-2" alt="edit button"></a></span>
+            </div>
+            <button type="button" class="text-white f--tonic text-xl uppercase bg--fuel hover:bg-black focus:ring-4 focus:ring-blue-300 rounded-lg px-4 py-2 text-center my-10 md:mr-0">TESTEZ VOTRE CHANCE</button>              
     </div>
-    <div class="flex flex-col items-center justify-center">
-    <p class="text-xl mb-6 pt-10 w-3/4 text-center">Les aventures imprévues riment avec les meilleurs souvenirs! Explorez tous les avions sur le point d'afficher complet et sautez sur une occasion sans vous ruiner.</p>           
-    <button type="button" class="text-white f--tonic text-xl uppercase bg--fuel hover:bg-black focus:ring-4 focus:ring-blue-300 rounded-lg px-4 py-2 text-center mb-10 md:mr-0">VOLS DERNIÈRE CHANCE</button>              
-</div>    
-<div class="text-center p-10">
-    <div class="text-center p-10 bg--white  rounded-lg">
-        <h2 class="text-4xl mb-6 text-center">Plus d'options?</h2>
-        <p class="text-xl mb-6 text-center">Dites-en plus sur vos projets de voyage et nous verrons quels vols sont disponibles dans votre fourchette.</p>
-        <div class="flex flex-col justify-center items-center">
-        <span class="leading-9 flex flex-col lg:flex-row justify-center items-center">Planifiez votre <a href="#" class="inline-flex items-center text-2xl f--tonic font-extrabold px-2 hover:underline">Aller-Retour<img src="img/dropdown.svg" class="h-6 px-2" alt="drop-down arrow"></a>
-        À partir de <a href="#" class="inline-flex items-center text-2xl f--tonic font-extrabold px-2 hover:underline">YQB (Québec)<img src="img/edit.svg" class="h-6 px-2" alt="edit button"></a> vers
-        <a href="#" class="inline-flex items-center text-2xl f--tonic font-extrabold px-2 hover:underline">N'importe où<img src="img/dropdown.svg" class="h-6 px-2" alt="drop-down arrow"></a></span>
-        <span class="leading-9 flex flex-col lg:flex-row">dans le.la prochain.e 
-        <a href="#" class="inline-flex items-center text-2xl f--tonic font-extrabold px-2 hover:underline">Semaine<img src="img/dropdown.svg" class="h-6 px-2" alt="drop-down arrow"></a>
-         en dessous de <a href="#" class="inline-flex items-center text-2xl f--tonic font-extrabold px-2 hover:underline">799$<img src="img/edit.svg" class="h-6 px-2" alt="edit button"></a></span>
-        </div>
-         <button type="button" class="text-white f--tonic text-xl uppercase bg--fuel hover:bg-black focus:ring-4 focus:ring-blue-300 rounded-lg px-4 py-2 text-center my-10 md:mr-0">TESTEZ VOTRE CHANCE</button>              
-   </div>
-        
-</section>
+</div>
+            
+    </section>
 
 
   <section class="container mx-auto col-span-4 m-10 flex justify-center items-center flex-col">
@@ -328,15 +325,14 @@
 <footer class="bg--charcoal">
         <a class="flex items-center justify-center mx-auto relative bottom-8" href="index.html"><img src="img/hat.svg" class="h-20 hover:h-24" alt="Chapeau High Jack"></a>
         <div class="dashed-line h-4 mb-10 w-full"></div>
-        </div>
   <div class="container mx-auto">
     <div class="grid grid-cols-2 gap-8 px-4 py-6 md:grid-cols-5 text-center md:text-left">
 
             <div class="col-span-full md:col-span-1">
-                <span class="flex flex-col md:flex-row justify-center md:justify-start">
+                <div class="flex flex-col md:flex-row justify-center md:justify-start">
                 <h2 class="mb-0 md:mb-6 text-sm font-semibold text-white uppercase">Fait au Canada</h2>
                 <img src="img/canada.svg" class="h-7 mx-1 mb-1 md:mb-0" alt="Feuille d'érable canadienne">
-                </span>
+                </div>
                 <p class="text-white">Fièrement en fonction depuis 2023.</p>
             </div>
             <div class="col-span-1">
@@ -400,6 +396,7 @@
                 </span>
             </div>
   </div>
+</div>
 
 </footer>
 
