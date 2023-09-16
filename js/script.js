@@ -125,8 +125,4 @@ const validatePassword = (password) => {
     return true;
 }
 
-form.addEventListener('submit', function(event) {
-    if (!validateContactForm()) {
-        event.preventDefault();
-    }
-});
+
